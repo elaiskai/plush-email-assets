@@ -1,0 +1,459 @@
+<!--
+PLUSH.LT — Antras pirkimas (second-purchase) flow — PILNA PERŽIŪRA (visi 4 laiškai viename)
+Skirta klientui greitai peržiūrėti visą automatiką. Kiekvienas laiškas turi info juostą (kada, tema, tikslas, nuolaida).
+Automation: DISABLED Omnisende (6a30fc9cc1bd2dc239e77bfd), laukia Luko ENABLE + Shopify kodų.
+-->
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plush — Antras pirkimas: visa automatika</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin:0; padding:0; background:#d9d7d2; -webkit-text-size-adjust:100%; font-family:'Inter', Arial, sans-serif; }
+  table { border-collapse:collapse; }
+  img { border:0; display:block; line-height:100%; outline:none; text-decoration:none; }
+  .h1 { font-family:'Bricolage Grotesque', Arial, sans-serif; }
+  .body { font-family:'Inter', Arial, sans-serif; }
+  .meta { width:600px; max-width:600px; margin:0 auto; }
+  .meta-card { background:#111111; border-radius:14px 14px 0 0; padding:22px 28px; color:#fff; }
+  .meta-num { display:inline-block; background:#FFA400; color:#111; font-weight:800; font-size:13px; padding:4px 12px; border-radius:20px; letter-spacing:0.5px; }
+  .meta-when { color:#FFA400; font-weight:700; font-size:13px; letter-spacing:0.5px; }
+  .meta-h { font-family:'Bricolage Grotesque', Arial, sans-serif; font-size:22px; font-weight:800; margin:10px 0 0 0; }
+  .meta-row { font-size:13px; line-height:1.55; color:#cfcfcf; margin-top:8px; }
+  .meta-row strong { color:#fff; }
+  .flowhead { width:600px; max-width:600px; margin:0 auto; text-align:center; padding:40px 20px 10px 20px; }
+  .arrow { width:600px; max-width:600px; margin:0 auto; text-align:center; color:#9a9a9a; font-size:26px; padding:14px 0; }
+  @media only screen and (max-width:640px){
+    .meta, .flowhead, .arrow { width:100% !important; }
+    .wrap { width:100% !important; }
+    .px { padding-left:24px !important; padding-right:24px !important; }
+    .hl { font-size:32px !important; line-height:1.12 !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- FLOW HEADER -->
+<div class="flowhead">
+  <div style="font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#7a7a7a; font-weight:700;">Plush · Automatika</div>
+  <div class="h1" style="font-size:30px; font-weight:800; color:#111; margin-top:8px;">Antras pirkimas — 4 laiškų seka</div>
+  <div style="font-size:14px; line-height:1.6; color:#555; margin-top:10px; max-width:520px; margin-left:auto; margin-right:auto;">
+    Automatika klientams, kurie jau pirko sofą ar kampą. Pradeda nuo priedų cross-sell, pereina prie edukacinio gido, tada švelni nuolaida ir galiausiai antros sofos pasiūlymas. Žemiau — visi 4 laiškai tokia tvarka, kokia juos gaus klientas.
+  </div>
+</div>
+
+<!-- ============ EMAIL 1 ============ -->
+<div class="meta"><div class="meta-card">
+  <span class="meta-num">Laiškas 1</span> &nbsp; <span class="meta-when">+30 dienų po pirkimo</span>
+  <div class="meta-h">Užbaik savo erdvę priedais</div>
+  <div class="meta-row"><strong>Tikslas:</strong> priedų cross-sell (pufas / pagalvės / fotelis) · <strong>Nuolaida:</strong> nėra</div>
+</div></div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#eceae6;">
+<tr><td align="center" style="padding:0;">
+<table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" style="width:600px; max-width:600px; background:#ffffff;">
+  <tr><td style="padding:0; line-height:0;">
+    <a href="https://plush.lt/collections/all" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/heroes/second-purchase-e1-fluffy.png" width="600" alt="Plush Fluffy sofa svetainėje" style="width:100%; max-width:600px; height:auto; display:block;"></a>
+  </td></tr>
+  <tr><td class="px" style="padding:34px 40px 0 40px;">
+    <div class="body" style="font-size:12px; letter-spacing:1.6px; text-transform:uppercase; color:#000000; font-weight:600;">
+      <span style="background:#FFA400; padding:5px 12px; border-radius:20px;">Erdvės akcentai</span>
+    </div>
+  </td></tr>
+  <tr><td class="px" style="padding:18px 40px 0 40px;">
+    <h1 class="h1 hl" style="margin:0; font-size:40px; line-height:1.08; font-weight:800; color:#111111; letter-spacing:-0.5px;">Tavo sofa nusipelno kompanijos</h1>
+  </td></tr>
+  <tr><td class="px body" style="padding:22px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Sveika(s), [[contact.first_name]], tikimės, kad tavo Plush jau tapo mėgstamiausia vieta namuose.</p>
+    <p style="margin:14px 0 0 0;">Dabar keli apgalvoti priedai - pufas, papildomos pagalvės ar fotelis - gali padaryti tavo erdvę dar jaukesnę.</p>
+  </td></tr>
+  <tr><td class="px" style="padding:26px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/pufas-plush" target="_blank" rel="noopener"><img src="https://www.plush.lt/cdn/shop/files/pufas-plush-abriamo-8-6412094.png?v=1769539700&width=1946" width="320" alt="Pufas Plush" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">Minkštas akcentas</div>
+        <div class="h1" style="font-size:19px; font-weight:700; color:#111111;">Pufas "Plush"</div>
+        <div class="body" style="margin-top:8px; font-size:15px; line-height:1.55; color:#555555;">Pufas tampa kojų atrama, papildoma sėdima vieta ir minkštu jaukumo tašku ten, kur jo labiausiai norisi.</div>
+        <div class="h1" style="margin-top:14px; font-size:22px; font-weight:700; color:#111111;">€129</div>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px;"><tr>
+          <td style="background:#000000; border-radius:40px;"><a href="https://plush.lt/products/pufas-plush" target="_blank" rel="noopener" class="body" style="display:block; padding:13px 26px; font-size:13px; font-weight:600; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">Rinktis pufą</a></td>
+        </tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:14px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy" target="_blank" rel="noopener"><img src="https://www.plush.lt/cdn/shop/files/papildomos-pagalves-pasirinkite-spalva-6205471.png?v=1769586797&width=1946" width="320" alt="Papildomos pagalvės Plush" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">Spalva ir tekstūra</div>
+        <div class="h1" style="font-size:19px; font-weight:700; color:#111111;">Papildomos pagalvės</div>
+        <div class="body" style="margin-top:8px; font-size:15px; line-height:1.55; color:#555555;">Papildomos pagalvės įneša spalvos, tekstūros ir lengvai pakeičia visą sofos nuotaiką.</div>
+        <div class="h1" style="margin-top:14px; font-size:22px; font-weight:700; color:#111111;">€29,99</div>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px;"><tr>
+          <td style="background:#000000; border-radius:40px;"><a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy" target="_blank" rel="noopener" class="body" style="display:block; padding:13px 26px; font-size:13px; font-weight:600; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">Rinktis pagalves</a></td>
+        </tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:14px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy-2" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/0908/4859/2247/files/1_f7455ad4-e81d-4d40-a89a-435473dc9bb5.png?v=1774518621" width="320" alt="Fotelis Plush Cappuccino" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">Kampelis sau</div>
+        <div class="h1" style="font-size:19px; font-weight:700; color:#111111;">Fotelis "Plush"</div>
+        <div class="body" style="margin-top:8px; font-size:15px; line-height:1.55; color:#555555;">Fotelis sukuria tavo asmeninį poilsio kampelį - vietą knygai, kavai ir tylai.</div>
+        <div class="h1" style="margin-top:14px; font-size:22px; font-weight:700; color:#111111;">€259</div>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px;"><tr>
+          <td style="background:#000000; border-radius:40px;"><a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy-2" target="_blank" rel="noopener" class="body" style="display:block; padding:13px 26px; font-size:13px; font-weight:600; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">Rinktis fotelį</a></td>
+        </tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px body" style="padding:26px 40px 0 40px; font-size:15px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Pirk drąsiai - <strong style="color:#111111;">2 metų garantija, 365 dienos grąžinimui ir pristatymas per 1-3 dienas</strong>.</p>
+  </td></tr>
+  <tr><td class="px" style="padding:24px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+      <td align="center" style="background:#FFA400; border-radius:40px;">
+        <a href="https://plush.lt/collections/all" target="_blank" rel="noopener" class="body" style="display:block; padding:17px 24px; font-size:15px; font-weight:700; color:#111111; text-decoration:none; text-align:center; letter-spacing:0.3px;">Peržiūrėti priedus</a>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td class="px body" style="padding:28px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Jei norisi pagalbos išsirinkti, tiesiog <strong style="color:#111111;">atsakyk į šį laišką</strong> - mielai patarsime asmeniškai.</p>
+  </td></tr>
+  <tr><td class="px body" style="padding:24px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Šiltai,</p>
+    <p style="margin:6px 0 0 0; font-weight:700; color:#111111;">Lukas, Plush komanda</p>
+  </td></tr>
+  <tr><td class="px" style="padding:32px 40px 44px 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #ececec;"><tr>
+      <td class="body" align="center" style="padding-top:20px; font-size:12px; letter-spacing:0.4px; color:#555555;">
+        2 metų garantija&nbsp;&nbsp;&middot;&nbsp;&nbsp;Pristatymas 1-3 d.&nbsp;&nbsp;&middot;&nbsp;&nbsp;365 d. grąžinimui
+      </td>
+    </tr></table>
+  </td></tr>
+</table>
+</td></tr>
+</table>
+
+<div class="arrow">&#8595;&nbsp; po 7 dienų &nbsp;&#8595;</div>
+
+<!-- ============ EMAIL 2 ============ -->
+<div class="meta"><div class="meta-card">
+  <span class="meta-num">Laiškas 2</span> &nbsp; <span class="meta-when">+37 dienos (7 d. po L1)</span>
+  <div class="meta-h">3 būdai atgaivinti svetainę</div>
+  <div class="meta-row"><strong>Tikslas:</strong> edukacinis stiliaus gidas, šildo prieš nuolaidą · <strong>Nuolaida:</strong> nėra</div>
+</div></div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#eceae6;">
+<tr><td align="center" style="padding:0;">
+<table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" style="width:600px; max-width:600px; background:#ffffff;">
+  <tr><td style="padding:0; line-height:0;">
+    <a href="https://plush.lt/collections/all" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/heroes/second-purchase-e2-fluffy-grey.png" width="600" alt="Plush sofa jaukioje svetainėje" style="width:100%; max-width:600px; height:auto; display:block;"></a>
+  </td></tr>
+  <tr><td class="px" style="padding:34px 40px 0 40px;">
+    <div class="body" style="font-size:12px; letter-spacing:1.6px; text-transform:uppercase; color:#000000; font-weight:600;">
+      <span style="background:#FFA400; padding:5px 12px; border-radius:20px;">Stiliaus gidas</span>
+    </div>
+  </td></tr>
+  <tr><td class="px" style="padding:18px 40px 0 40px;">
+    <h1 class="h1 hl" style="margin:0; font-size:40px; line-height:1.08; font-weight:800; color:#111111; letter-spacing:-0.5px;">3 būdai atgaivinti svetainę</h1>
+  </td></tr>
+  <tr><td class="px body" style="padding:22px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Labas, [[contact.first_name]], tikiuosi, tavo Plush sofa jau tapo mėgstamiausia namų vieta.</p>
+    <p style="margin:14px 0 0 0;">Kartais svetainės nuotaikai pakeisti nereikia didelių sprendimų. Keli apgalvoti akcentai gali suteikti erdvei daugiau gylio, jaukumo ir asmeniškumo.</p>
+  </td></tr>
+  <tr><td class="px" style="padding:26px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy" target="_blank" rel="noopener"><img src="https://www.plush.lt/cdn/shop/files/papildomos-pagalves-pasirinkite-spalva-6205471.png?v=1769586797&width=1946" width="320" alt="Papildomos pagalvės Plush" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">01 &nbsp;/&nbsp; Sluoksniuok pagalves</div>
+        <div class="body" style="margin-top:4px; font-size:15px; line-height:1.55; color:#555555;">Derink skirtingas tekstūras, dydžius ir kelis artimus atspalvius - taip sofa atrodys gyvesnė, bet išliks harmoningai rami. Viena ryškesnė spalva gali tapti subtiliu visos svetainės akcentu.</div>
+        <a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy" target="_blank" rel="noopener" class="body" style="display:inline-block; margin-top:12px; font-size:13px; font-weight:600; color:#111111; text-decoration:none; border-bottom:2px solid #FFA400; padding-bottom:2px;">Žiūrėti pagalves</a>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:14px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/pufas-plush" target="_blank" rel="noopener"><img src="https://www.plush.lt/cdn/shop/files/pufas-plush-abriamo-8-6412094.png?v=1769539700&width=1946" width="320" alt="Pufas Plush" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">02 &nbsp;/&nbsp; Pridėk pufą jaukumui</div>
+        <div class="body" style="margin-top:4px; font-size:15px; line-height:1.55; color:#555555;">Pufas lengvai tampa kojų atrama, papildoma sėdima vieta ar minkštu vizualiniu akcentu šalia sofos. Jis suteikia erdvei daugiau laisvumo ir kviečia įsitaisyti dar patogiau.</div>
+        <a href="https://plush.lt/products/pufas-plush" target="_blank" rel="noopener" class="body" style="display:inline-block; margin-top:12px; font-size:13px; font-weight:600; color:#111111; text-decoration:none; border-bottom:2px solid #FFA400; padding-bottom:2px;">Žiūrėti pufus</a>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:14px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy-2" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/0908/4859/2247/files/1_f7455ad4-e81d-4d40-a89a-435473dc9bb5.png?v=1774518621" width="320" alt="Fotelis Plush Cappuccino" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">03 &nbsp;/&nbsp; Sukurk poilsio kampelį</div>
+        <div class="body" style="margin-top:4px; font-size:15px; line-height:1.55; color:#555555;">Fotelis gali tapti tavo asmenine vieta knygai, rytinei kavai ar ramiam vakarui. Pastatytas šalia šviestuvo ar mažo staliuko, jis sukuria atskirą jaukumo salą svetainėje.</div>
+        <a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy-2" target="_blank" rel="noopener" class="body" style="display:inline-block; margin-top:12px; font-size:13px; font-weight:600; color:#111111; text-decoration:none; border-bottom:2px solid #FFA400; padding-bottom:2px;">Žiūrėti fotelius</a>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:30px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+      <td align="center" style="background:#FFA400; border-radius:40px;">
+        <a href="https://plush.lt/collections/all" target="_blank" rel="noopener" class="body" style="display:block; padding:17px 24px; font-size:15px; font-weight:700; color:#111111; text-decoration:none; text-align:center; letter-spacing:0.3px;">Atrasti priedus</a>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td class="px body" style="padding:28px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Jei norisi įkvėpimo, atrask Plush priedus arba <strong style="color:#111111;">parašyk mums</strong> - mielai padėsime rasti idėjų tavo erdvei.</p>
+  </td></tr>
+  <tr><td class="px body" style="padding:24px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Šiltai,</p>
+    <p style="margin:6px 0 0 0; font-weight:700; color:#111111;">Lukas, Plush komanda</p>
+  </td></tr>
+  <tr><td class="px" style="padding:32px 40px 44px 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #ececec;"><tr>
+      <td class="body" align="center" style="padding-top:20px; font-size:12px; letter-spacing:0.4px; color:#555555;">
+        2 metų garantija&nbsp;&nbsp;&middot;&nbsp;&nbsp;Pristatymas 1-3 d.&nbsp;&nbsp;&middot;&nbsp;&nbsp;365 d. grąžinimui
+      </td>
+    </tr></table>
+  </td></tr>
+</table>
+</td></tr>
+</table>
+
+<div class="arrow">&#8595;&nbsp; po 8 dienų &nbsp;&#8595;</div>
+
+<!-- ============ EMAIL 3 ============ -->
+<div class="meta"><div class="meta-card">
+  <span class="meta-num">Laiškas 3</span> &nbsp; <span class="meta-when">+45 dienos po pirkimo</span>
+  <div class="meta-h">Pufas ar fotelis - 15 EUR pigiau</div>
+  <div class="meta-row"><strong>Tikslas:</strong> nuolaida priedams · <strong>Nuolaida:</strong> 15 EUR (kodas PRIEDAI15, tik pufas + fotelis)</div>
+</div></div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#eceae6;">
+<tr><td align="center" style="padding:0;">
+<table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" style="width:600px; max-width:600px; background:#ffffff;">
+  <tr><td style="padding:0; line-height:0;">
+    <a href="https://plush.lt/collections/all" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/heroes/second-purchase-e3-fotelis-life.png" width="600" alt="Poilsis Plush sofoje" style="width:100%; max-width:600px; height:auto; display:block;"></a>
+  </td></tr>
+  <tr><td class="px" style="padding:34px 40px 0 40px;">
+    <div class="body" style="font-size:12px; letter-spacing:1.6px; text-transform:uppercase; color:#000000; font-weight:600;">
+      <span style="background:#FFA400; padding:5px 12px; border-radius:20px;">15 EUR dovana</span>
+    </div>
+  </td></tr>
+  <tr><td class="px" style="padding:18px 40px 0 40px;">
+    <h1 class="h1 hl" style="margin:0; font-size:40px; line-height:1.08; font-weight:800; color:#111111; letter-spacing:-0.5px;">Pufas ar fotelis - 15 EUR pigiau</h1>
+  </td></tr>
+  <tr><td class="px body" style="padding:22px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Labas, [[contact.first_name]], tikiuosi, tavo Plush sofa jau tapo mėgstama namų vieta.</p>
+    <p style="margin:14px 0 0 0;">Jei vis dar galvojai apie pufą ar fotelį, dabar puikus metas papildyti savo poilsio erdvę. Su kodu PRIEDAI15 sutaupysi 15 EUR.</p>
+  </td></tr>
+  <tr><td class="px" style="padding:26px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#FFF6E6; border:2px dashed #FFA400; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 22px 24px;">
+        <div class="body" style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#9a7b32; font-weight:700;">Tavo nuolaidos kodas</div>
+        <div class="h1" style="margin-top:10px; font-size:34px; font-weight:800; color:#111111; letter-spacing:2px;">PRIEDAI15</div>
+        <div class="body" style="margin-top:10px; font-size:14px; line-height:1.5; color:#6b6b6b;">Kodas galioja tik pufui ir foteliui - tai fiksuota 15 EUR nuolaida.</div>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:24px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/pufas-plush" target="_blank" rel="noopener"><img src="https://www.plush.lt/cdn/shop/files/pufas-plush-abriamo-8-6412094.png?v=1769539700&width=1946" width="320" alt="Pufas Plush" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">Minkštas akcentas</div>
+        <div class="h1" style="font-size:19px; font-weight:700; color:#111111;">Pufas "Plush"</div>
+        <div class="body" style="margin-top:8px; font-size:15px; line-height:1.55; color:#555555;">Pufas suteikia daugiau jaukumo, tampa patogia atrama kojoms ir prireikus - papildoma sėdima vieta.</div>
+        <div class="body" style="margin-top:14px; font-size:14px; color:#999;"><span style="text-decoration:line-through;">€129</span></div>
+        <div class="h1" style="margin-top:2px; font-size:22px; font-weight:700; color:#111111;">€114 <span class="body" style="font-size:13px; font-weight:600; color:#9a7b32;">su PRIEDAI15</span></div>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px;"><tr>
+          <td style="background:#000000; border-radius:40px;"><a href="https://plush.lt/products/pufas-plush" target="_blank" rel="noopener" class="body" style="display:block; padding:13px 26px; font-size:13px; font-weight:600; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">Rinktis pufą</a></td>
+        </tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:14px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy-2" target="_blank" rel="noopener"><img src="https://cdn.shopify.com/s/files/1/0908/4859/2247/files/1_f7455ad4-e81d-4d40-a89a-435473dc9bb5.png?v=1774518621" width="320" alt="Fotelis Plush Cappuccino" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">Kampelis sau</div>
+        <div class="h1" style="font-size:19px; font-weight:700; color:#111111;">Fotelis "Plush"</div>
+        <div class="body" style="margin-top:8px; font-size:15px; line-height:1.55; color:#555555;">Fotelis sukuria asmeninį poilsio kampelį, kuriame gera atsitraukti, skaityti ar tiesiog ramiai pabūti.</div>
+        <div class="body" style="margin-top:14px; font-size:14px; color:#999;"><span style="text-decoration:line-through;">€259</span></div>
+        <div class="h1" style="margin-top:2px; font-size:22px; font-weight:700; color:#111111;">€244 <span class="body" style="font-size:13px; font-weight:600; color:#9a7b32;">su PRIEDAI15</span></div>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px;"><tr>
+          <td style="background:#000000; border-radius:40px;"><a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy-2" target="_blank" rel="noopener" class="body" style="display:block; padding:13px 26px; font-size:13px; font-weight:600; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">Rinktis fotelį</a></td>
+        </tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:14px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy" target="_blank" rel="noopener"><img src="https://www.plush.lt/cdn/shop/files/papildomos-pagalves-pasirinkite-spalva-6205471.png?v=1769586797&width=1946" width="320" alt="Papildomos pagalvės Plush" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">Spalvos akcentas</div>
+        <div class="h1" style="font-size:19px; font-weight:700; color:#111111;">Papildomos pagalvės</div>
+        <div class="body" style="margin-top:8px; font-size:15px; line-height:1.55; color:#555555;">Dekoratyvinės pagalvės suteikia tavo svetainei daugiau jaukumo, tekstūros ir subtilų spalvos akcentą.</div>
+        <div class="h1" style="margin-top:14px; font-size:22px; font-weight:700; color:#111111;">€29,99</div>
+        <div class="body" style="margin-top:4px; font-size:13px; color:#999;">Nuolaida netaikoma</div>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px;"><tr>
+          <td style="background:#000000; border-radius:40px;"><a href="https://plush.lt/products/pufas-plush-pasirinkite-spalva-copy" target="_blank" rel="noopener" class="body" style="display:block; padding:13px 26px; font-size:13px; font-weight:600; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">Rinktis pagalves</a></td>
+        </tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:26px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+      <td align="center" style="background:#FFA400; border-radius:40px;">
+        <a href="https://plush.lt/collections/all" target="_blank" rel="noopener" class="body" style="display:block; padding:17px 24px; font-size:15px; font-weight:700; color:#111111; text-decoration:none; text-align:center; letter-spacing:0.3px;">Atsiimti nuolaidą</a>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td class="px body" style="padding:28px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Jei prireiks pagalbos derinant spalvas ar audinius, tiesiog <strong style="color:#111111;">atsakyk</strong> - mielai padėsime.</p>
+  </td></tr>
+  <tr><td class="px body" style="padding:24px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Šiltai,</p>
+    <p style="margin:6px 0 0 0; font-weight:700; color:#111111;">Lukas, Plush komanda</p>
+  </td></tr>
+  <tr><td class="px" style="padding:32px 40px 44px 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #ececec;"><tr>
+      <td class="body" align="center" style="padding-top:20px; font-size:12px; letter-spacing:0.4px; color:#555555;">
+        2 metų garantija&nbsp;&nbsp;&middot;&nbsp;&nbsp;Pristatymas 1-3 d.&nbsp;&nbsp;&middot;&nbsp;&nbsp;365 d. grąžinimui
+      </td>
+    </tr></table>
+  </td></tr>
+</table>
+</td></tr>
+</table>
+
+<div class="arrow">&#8595;&nbsp; po 45 dienų &nbsp;&#8595;</div>
+
+<!-- ============ EMAIL 4 ============ -->
+<div class="meta"><div class="meta-card">
+  <span class="meta-num">Laiškas 4</span> &nbsp; <span class="meta-when">+90 dienų (paskutinis)</span>
+  <div class="meta-h">Sukurk dar vieną jaukią erdvę</div>
+  <div class="meta-row"><strong>Tikslas:</strong> antros sofos upsell · <strong>Nuolaida:</strong> 20 EUR sofoms (kodas DARVIENA20)</div>
+</div></div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#eceae6;">
+<tr><td align="center" style="padding:0;">
+<table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" style="width:600px; max-width:600px; background:#ffffff;">
+  <tr><td style="padding:0; line-height:0;">
+    <a href="https://plush.lt/collections/sofos" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/heroes/second-purchase-e4-sofi-life.png" width="600" alt="Plush sofa jaukioje svetainėje" style="width:100%; max-width:600px; height:auto; display:block;"></a>
+  </td></tr>
+  <tr><td class="px" style="padding:34px 40px 0 40px;">
+    <div class="body" style="font-size:12px; letter-spacing:1.6px; text-transform:uppercase; color:#000000; font-weight:600;">
+      <span style="background:#FFA400; padding:5px 12px; border-radius:20px;">Dar viena erdvė</span>
+    </div>
+  </td></tr>
+  <tr><td class="px" style="padding:18px 40px 0 40px;">
+    <h1 class="h1 hl" style="margin:0; font-size:40px; line-height:1.08; font-weight:800; color:#111111; letter-spacing:-0.5px;">Sukurk dar vieną jaukią erdvę</h1>
+  </td></tr>
+  <tr><td class="px body" style="padding:22px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Labas, [[contact.first_name]], tikiuosi, tavo namuose jau gera ilsėtis.</p>
+    <p style="margin:14px 0 0 0;">Gal namuose yra kambarys, kuris nusipelno tokio pat jaukumo kaip tavo sofa? Su kodu DARVIENA20 sutaupysi 20 EUR sofai.</p>
+  </td></tr>
+  <tr><td class="px" style="padding:26px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#FFF6E6; border:2px dashed #FFA400; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 22px 24px;">
+        <div class="body" style="font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#9a7b32; font-weight:700;">Tavo nuolaidos kodas</div>
+        <div class="h1" style="margin-top:10px; font-size:34px; font-weight:800; color:#111111; letter-spacing:2px;">DARVIENA20</div>
+        <div class="body" style="margin-top:10px; font-size:14px; line-height:1.5; color:#6b6b6b;">Kodas galioja sofoms ir suteikia fiksuotą 20 EUR nuolaidą.</div>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:24px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/sofa-plush-cappuccino" target="_blank" rel="noopener"><img src="https://www.plush.lt/cdn/shop/files/sofa-plush-cappuccino-8983675.png?v=1767681018&width=1946" width="320" alt="Sofa Plush Cappuccino" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">Klasikinis jaukumas</div>
+        <div class="h1" style="font-size:19px; font-weight:700; color:#111111;">Sofa "Plush"</div>
+        <div class="body" style="margin-top:8px; font-size:15px; line-height:1.55; color:#555555;">Klasikinio jaukumo sofa, kuri lengvai išskleidžiama ir patogi kasdienai.</div>
+        <div class="body" style="margin-top:14px; font-size:14px; color:#999;"><span style="text-decoration:line-through;">€439</span></div>
+        <div class="h1" style="margin-top:2px; font-size:22px; font-weight:700; color:#111111;">€419 <span class="body" style="font-size:13px; font-weight:600; color:#9a7b32;">su DARVIENA20</span></div>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px;"><tr>
+          <td style="background:#000000; border-radius:40px;"><a href="https://plush.lt/products/sofa-plush-cappuccino" target="_blank" rel="noopener" class="body" style="display:block; padding:13px 26px; font-size:13px; font-weight:600; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">Rinktis sofą</a></td>
+        </tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:14px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/sofa-sofi-smeline" target="_blank" rel="noopener"><img src="https://www.plush.lt/cdn/shop/files/sofa-sofi-smeline-7187295.png?v=1768178173&width=1946" width="320" alt="Sofa Sofi Smėlinė" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">Kompaktiškas sprendimas</div>
+        <div class="h1" style="font-size:19px; font-weight:700; color:#111111;">Sofa "Sofi"</div>
+        <div class="body" style="margin-top:8px; font-size:15px; line-height:1.55; color:#555555;">Kompaktiška sofa, kuri tinka mažesnei erdvei ir turi patogią miegojimo funkciją.</div>
+        <div class="body" style="margin-top:14px; font-size:14px; color:#999;"><span style="text-decoration:line-through;">€539</span></div>
+        <div class="h1" style="margin-top:2px; font-size:22px; font-weight:700; color:#111111;">€519 <span class="body" style="font-size:13px; font-weight:600; color:#9a7b32;">su DARVIENA20</span></div>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px;"><tr>
+          <td style="background:#000000; border-radius:40px;"><a href="https://plush.lt/products/sofa-sofi-smeline" target="_blank" rel="noopener" class="body" style="display:block; padding:13px 26px; font-size:13px; font-weight:600; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">Rinktis sofą</a></td>
+        </tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:14px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#faf9f7; border:1px solid #ececec; border-radius:16px;">
+      <tr><td align="center" style="padding:24px 24px 0 24px;">
+        <a href="https://plush.lt/products/kampas-fluffy-beige" target="_blank" rel="noopener"><img src="https://www.plush.lt/cdn/shop/files/4.png?v=1773931426&width=1946" width="320" alt="Kampas Fluffy Beige" style="width:100%; max-width:320px; height:auto; margin:0 auto;"></a>
+      </td></tr>
+      <tr><td style="padding:16px 24px 22px 24px;">
+        <div class="body" style="font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#FFA400; margin-bottom:6px;">Erdvus kampas</div>
+        <div class="h1" style="font-size:19px; font-weight:700; color:#111111;">Kampas "Fluffy"</div>
+        <div class="body" style="margin-top:8px; font-size:15px; line-height:1.55; color:#555555;">Erdvus ir minkštas kampas, sukurtas jaukiems šeimos vakarams.</div>
+        <div class="body" style="margin-top:14px; font-size:14px; color:#999;"><span style="text-decoration:line-through;">€509</span></div>
+        <div class="h1" style="margin-top:2px; font-size:22px; font-weight:700; color:#111111;">€489 <span class="body" style="font-size:13px; font-weight:600; color:#9a7b32;">su DARVIENA20</span></div>
+        <table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px;"><tr>
+          <td style="background:#000000; border-radius:40px;"><a href="https://plush.lt/products/kampas-fluffy-beige" target="_blank" rel="noopener" class="body" style="display:block; padding:13px 26px; font-size:13px; font-weight:600; color:#ffffff; text-decoration:none; letter-spacing:0.5px;">Rinktis kampą</a></td>
+        </tr></table>
+      </td></tr>
+    </table>
+  </td></tr>
+  <tr><td class="px" style="padding:26px 40px 0 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+      <td align="center" style="background:#FFA400; border-radius:40px;">
+        <a href="https://plush.lt/collections/sofos" target="_blank" rel="noopener" class="body" style="display:block; padding:17px 24px; font-size:15px; font-weight:700; color:#111111; text-decoration:none; text-align:center; letter-spacing:0.3px;">Rinktis sofą</a>
+      </td>
+    </tr></table>
+  </td></tr>
+  <tr><td class="px body" style="padding:28px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Jei norėtum pasitarti, kuri sofa labiausiai tiktų tavo erdvei, tiesiog <strong style="color:#111111;">atrašyk</strong> - mielai padėsiu.</p>
+  </td></tr>
+  <tr><td class="px body" style="padding:24px 40px 0 40px; font-size:16px; line-height:1.6; color:#444444;">
+    <p style="margin:0;">Šiltai,</p>
+    <p style="margin:6px 0 0 0; font-weight:700; color:#111111;">Lukas, Plush komanda</p>
+  </td></tr>
+  <tr><td class="px" style="padding:32px 40px 44px 40px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-top:1px solid #ececec;"><tr>
+      <td class="body" align="center" style="padding-top:20px; font-size:12px; letter-spacing:0.4px; color:#555555;">
+        2 metų garantija&nbsp;&nbsp;&middot;&nbsp;&nbsp;Pristatymas 1-3 d.&nbsp;&nbsp;&middot;&nbsp;&nbsp;365 d. grąžinimui
+      </td>
+    </tr></table>
+  </td></tr>
+</table>
+</td></tr>
+</table>
+
+<div style="text-align:center; padding:40px 20px 50px 20px; color:#888; font-size:12px;">Plush · Antras pirkimas automatika · Visi 4 laiškai</div>
+
+</body>
+</html>
