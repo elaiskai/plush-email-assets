@@ -1,107 +1,311 @@
-<!--
-CAMPAIGN C54 v2: "Audinys pagal jūsų gyvenimą" - FABRIC SELECTOR (Q&A, real photos)
-=================================================================================
-Perdaryta 08-29. Naujas layout: audinio SELEKTORIUS - kiekvienas audinys = kortele su
-oranziniu KLAUSIMU pill virsuje ("Norisi jaukumo?") + image-left + audinio faktas. NE line-art
-(kad nesikirstu su C51 IKEA gidu). 3 REALUS audiniai (faktai patikrinti is plush.lt aprasu):
-Boucle (Sofi/ABRIAMO), Velvetas (Diego/Martindale), Poso (Plush). Skiriasi nuo visu kitu.
-Edu / assist - kaina antraeile.
--->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="x-apple-disable-message-reformatting">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css">
 <style type="text/css">
-  @media (max-width:480px) {
-    .pad-side { padding-left:22px!important;padding-right:22px!important; }
-    .g-title { font-size:32px!important; }
-    .fcol { display:block!important;width:100%!important;padding:0!important; }
-    .fimg { margin-bottom:14px!important; }
+  html,
+  body {
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+  }
+  body,
+  table,
+  td,
+  a {
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+  }
+  table,
+  td {
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+    border-collapse:collapse;
+  }
+  img {
+    display:block;
+    border:0;
+    outline:none;
+    text-decoration:none;
+    -ms-interpolation-mode:bicubic;
+  }
+  .fabric-column {
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .fabric-image-column {
+    width:42%;
+    max-width:226px;
+  }
+  .fabric-copy-column {
+    width:58%;
+    max-width:314px;
+  }
+  @media only screen and (max-width:480px) {
+    .email-container {
+      width:100% !important;
+      max-width:100% !important;
+    }
+    .pad-side {
+      padding-left:20px !important;
+      padding-right:20px !important;
+    }
+    .masthead {
+      padding-top:4px !important;
+    }
+    .g-title {
+      font-size:30px !important;
+      line-height:1.1 !important;
+    }
+    .body-copy {
+      font-size:16px !important;
+      line-height:1.6 !important;
+    }
+    .fabric-column,
+    .fabric-image-column,
+    .fabric-copy-column {
+      display:block !important;
+      width:100% !important;
+      max-width:100% !important;
+    }
+    .fabric-image {
+      width:100% !important;
+      max-width:100% !important;
+      height:auto !important;
+    }
+    .fabric-copy-column {
+      padding:20px !important;
+    }
+    .fabric-title {
+      font-size:24px !important;
+      line-height:1.2 !important;
+    }
+    .question-pill {
+      font-size:13px !important;
+      line-height:1.35 !important;
+    }
+    .cta-table,
+    .cta-cell,
+    .cta-link {
+      width:100% !important;
+    }
+    .cta-link {
+      display:block !important;
+      box-sizing:border-box !important;
+      min-height:48px !important;
+      padding:15px 20px !important;
+      font-size:16px !important;
+      line-height:18px !important;
+      text-align:center !important;
+    }
+    .signoff {
+      font-size:16px !important;
+    }
   }
 </style>
 </head>
-<body style="width:100%;-webkit-text-size-adjust:100%;background-color:#E7DECF;margin:0;padding:0">
-<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#E7DECF">Atraskite audinį, kuris geriausiai atitinka jūsų gyvenimo būdą.</div>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#E7DECF"><tbody><tr><td>
-<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;background-color:#F5EEE3"><tbody>
+<body style="width:100%;margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background-color:#E7DECF;">
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#E7DECF;">Atraskite audinį, kuris geriausiai atitinka jūsų gyvenimo būdą.</div>
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#E7DECF" style="width:100%;background-color:#E7DECF;">
+<tbody>
+<tr>
+<td align="center" valign="top">
+<!--[if mso]>
+<table role="presentation" width="600" border="0" cellpadding="0" cellspacing="0" align="center">
+<tr>
+<td>
+<![endif]-->
+<table role="presentation" class="email-container" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#F5EEE3" style="width:100%;max-width:600px;margin:0 auto;background-color:#F5EEE3;">
+<tbody>
 
-<!-- LOGO -->
-<tr><td align="center" style="padding:26px 0 20px 0;background:#F5EEE3"><a href="https://plush.lt" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/logo/plush-wordmark.png" width="122" alt="PLUSH" style="display:block;width:122px;max-width:122px;height:auto;border:0"></a></td></tr>
+<tr>
+<td align="center" style="padding:26px 0 20px 0;background-color:#F5EEE3;">
+<a href="https://plush.lt" target="_blank" rel="noopener" style="display:inline-block;">
+<img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/logo/plush-wordmark.png" width="122" alt="PLUSH" style="display:block;width:122px;max-width:122px;height:auto;border:0;">
+</a>
+</td>
+</tr>
 
-<!-- MASTHEAD -->
-<tr><td class="pad-side" align="center" style="padding:4px 44px 0 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:#FFA400;margin-bottom:13px">Audinio gidas</div>
-  <div class="g-title" style="font-family:'Bricolage Grotesque','Arial Black',Arial,sans-serif;font-size:35px;font-weight:800;color:#1c1a17;letter-spacing:-0.02em;line-height:1.08;margin-bottom:13px">Audinys pagal jūsų gyvenimą</div>
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.65">Audinys lemia baldo pojūtį, išvaizdą ir patvarumą. Padėsime išsirinkti tinkamiausią.</div>
-</td></tr>
+<tr>
+<td class="pad-side masthead" align="center" style="padding:4px 44px 0 44px;background-color:#F5EEE3;">
+<div style="font-family:Inter,Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:#FFA400;margin-bottom:13px;">Audinio gidas</div>
+<div class="g-title" style="font-family:'Arial Black',Arial,sans-serif;font-size:35px;font-weight:800;color:#1c1a17;letter-spacing:-0.02em;line-height:1.08;margin-bottom:13px;">Audinys pagal jūsų gyvenimą</div>
+<div class="body-copy" style="font-family:Inter,Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.65;">Audinys lemia baldo pojūtį, išvaizdą ir patvarumą. Padėsime išsirinkti tinkamiausią.</div>
+</td>
+</tr>
 
-<tr><td style="height:30px;font-size:0;background:#F5EEE3" height="30">&nbsp;</td></tr>
+<tr>
+<td height="30" style="height:30px;font-size:0;line-height:0;background-color:#F5EEE3;">&nbsp;</td>
+</tr>
 
-<!-- FABRIC CARD 1: BOUCLE -->
-<tr><td class="pad-side" style="padding:0 30px 16px 30px;background:#F5EEE3">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:16px;overflow:hidden"><tbody><tr>
-    <td class="fcol" width="42%" valign="top" style="padding:0">
-      <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C54/assets/fab-boucle.jpg" width="220" alt="Boucle audinys - kampas Sofi" style="display:block;width:100%;height:auto;max-width:220px;border:0" class="fimg">
-    </td>
-    <td class="fcol" width="58%" valign="middle" style="padding:18px 22px 18px 20px">
-      <table border="0" cellpadding="0" cellspacing="0" style="margin-bottom:10px"><tbody><tr><td bgcolor="#FFF1DC" style="border-radius:20px;font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;color:#b7691f;padding:6px 13px">Norisi jaukumo ir švelnumo?</td></tr></tbody></table>
-      <div style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:21px;font-weight:800;color:#1c1a17;letter-spacing:-0.01em;margin-bottom:7px">Boucle</div>
-      <div style="font-family:'Inter',Arial,sans-serif;font-size:13.5px;font-weight:400;color:#6a635a;line-height:1.55">Minkštas ir švelnus boucle audinys kuria jaukią skandinaviško stiliaus nuotaiką, puikiai tinkančią kampui Sofi.</div>
-    </td>
-  </tr></tbody></table>
-</td></tr>
+<tr>
+<td class="pad-side" style="padding:0 30px 16px 30px;background-color:#F5EEE3;">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%;background-color:#ffffff;border-radius:16px;overflow:hidden;">
+<tbody>
+<tr>
+<td style="padding:0;font-size:0;line-height:0;text-align:left;">
+<!--[if mso]>
+<table role="presentation" width="540" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="227" valign="top">
+<![endif]-->
+<div class="fabric-column fabric-image-column" style="display:inline-block;width:42%;max-width:226px;vertical-align:middle;">
+<img class="fabric-image" src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C54/assets/fab-boucle.jpg" width="226" alt="Boucle audinys - kampas Sofi" style="display:block;width:100%;max-width:226px;height:auto;border:0;">
+</div>
+<!--[if mso]>
+</td>
+<td width="313" valign="middle">
+<![endif]-->
+<div class="fabric-column fabric-copy-column" style="display:inline-block;width:58%;max-width:314px;vertical-align:middle;padding:18px 22px 18px 20px;box-sizing:border-box;text-align:left;">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-bottom:10px;">
+<tbody>
+<tr>
+<td class="question-pill" bgcolor="#FFF1DC" style="border-radius:20px;font-family:Inter,Arial,sans-serif;font-size:11px;font-weight:700;line-height:1.35;color:#b7691f;padding:6px 13px;">Norisi jaukumo ir švelnumo?</td>
+</tr>
+</tbody>
+</table>
+<div class="fabric-title" style="font-family:Arial,sans-serif;font-size:21px;font-weight:800;color:#1c1a17;letter-spacing:-0.01em;line-height:1.2;margin-bottom:7px;">Boucle</div>
+<div class="body-copy" style="font-family:Inter,Arial,sans-serif;font-size:13.5px;font-weight:400;color:#6a635a;line-height:1.55;">Minkštas ir švelnus boucle audinys kuria jaukią skandinaviško stiliaus nuotaiką, puikiai tinkančią kampui Sofi.</div>
+</div>
+<!--[if mso]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
 
-<!-- FABRIC CARD 2: VELVETAS -->
-<tr><td class="pad-side" style="padding:0 30px 16px 30px;background:#F5EEE3">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:16px;overflow:hidden"><tbody><tr>
-    <td class="fcol" width="42%" valign="top" style="padding:0">
-      <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C54/assets/fab-velvetas.jpg" width="220" alt="Velvetas - kampas Diego" style="display:block;width:100%;height:auto;max-width:220px;border:0" class="fimg">
-    </td>
-    <td class="fcol" width="58%" valign="middle" style="padding:18px 22px 18px 20px">
-      <table border="0" cellpadding="0" cellspacing="0" style="margin-bottom:10px"><tbody><tr><td bgcolor="#FFF1DC" style="border-radius:20px;font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;color:#b7691f;padding:6px 13px">Reikia išskirtinio patvarumo?</td></tr></tbody></table>
-      <div style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:21px;font-weight:800;color:#1c1a17;letter-spacing:-0.01em;margin-bottom:7px">Velvetas</div>
-      <div style="font-family:'Inter',Arial,sans-serif;font-size:13.5px;font-weight:400;color:#6a635a;line-height:1.55">Prabangus velvetas pasižymi dideliu Martindale atsparumu dėvėjimuisi, todėl tinka intensyviai naudojamam kampui Diego su miego funkcija ir patalynės dėže.</div>
-    </td>
-  </tr></tbody></table>
-</td></tr>
+<tr>
+<td class="pad-side" style="padding:0 30px 16px 30px;background-color:#F5EEE3;">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%;background-color:#ffffff;border-radius:16px;overflow:hidden;">
+<tbody>
+<tr>
+<td style="padding:0;font-size:0;line-height:0;text-align:left;">
+<!--[if mso]>
+<table role="presentation" width="540" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="227" valign="top">
+<![endif]-->
+<div class="fabric-column fabric-image-column" style="display:inline-block;width:42%;max-width:226px;vertical-align:middle;">
+<img class="fabric-image" src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C54/assets/fab-velvetas.jpg" width="226" alt="Velvetas - kampas Diego" style="display:block;width:100%;max-width:226px;height:auto;border:0;">
+</div>
+<!--[if mso]>
+</td>
+<td width="313" valign="middle">
+<![endif]-->
+<div class="fabric-column fabric-copy-column" style="display:inline-block;width:58%;max-width:314px;vertical-align:middle;padding:18px 22px 18px 20px;box-sizing:border-box;text-align:left;">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-bottom:10px;">
+<tbody>
+<tr>
+<td class="question-pill" bgcolor="#FFF1DC" style="border-radius:20px;font-family:Inter,Arial,sans-serif;font-size:11px;font-weight:700;line-height:1.35;color:#b7691f;padding:6px 13px;">Reikia išskirtinio patvarumo?</td>
+</tr>
+</tbody>
+</table>
+<div class="fabric-title" style="font-family:Arial,sans-serif;font-size:21px;font-weight:800;color:#1c1a17;letter-spacing:-0.01em;line-height:1.2;margin-bottom:7px;">Velvetas</div>
+<div class="body-copy" style="font-family:Inter,Arial,sans-serif;font-size:13.5px;font-weight:400;color:#6a635a;line-height:1.55;">Prabangus velvetas pasižymi dideliu Martindale atsparumu dėvėjimuisi, todėl tinka intensyviai naudojamam kampui Diego su miego funkcija ir patalynės dėže.</div>
+</div>
+<!--[if mso]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
 
-<!-- FABRIC CARD 3: POSO -->
-<tr><td class="pad-side" style="padding:0 30px 0 30px;background:#F5EEE3">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:16px;overflow:hidden"><tbody><tr>
-    <td class="fcol" width="42%" valign="top" style="padding:0">
-      <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C54/assets/fab-poso.jpg" width="220" alt="Poso audinys - kampas Plush" style="display:block;width:100%;height:auto;max-width:220px;border:0" class="fimg">
-    </td>
-    <td class="fcol" width="58%" valign="middle" style="padding:18px 22px 18px 20px">
-      <table border="0" cellpadding="0" cellspacing="0" style="margin-bottom:10px"><tbody><tr><td bgcolor="#FFF1DC" style="border-radius:20px;font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;color:#b7691f;padding:6px 13px">Svarbiausia praktiškumas kasdienai?</td></tr></tbody></table>
-      <div style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:21px;font-weight:800;color:#1c1a17;letter-spacing:-0.01em;margin-bottom:7px">Poso audinys</div>
-      <div style="font-family:'Inter',Arial,sans-serif;font-size:13.5px;font-weight:400;color:#6a635a;line-height:1.55">Patvarus ir malonus liesti Poso audinys yra praktiškas pasirinkimas kasdienai bei kampui Plush su miego funkcija ir patalynės dėže.</div>
-    </td>
-  </tr></tbody></table>
-</td></tr>
+<tr>
+<td class="pad-side" style="padding:0 30px 0 30px;background-color:#F5EEE3;">
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%;background-color:#ffffff;border-radius:16px;overflow:hidden;">
+<tbody>
+<tr>
+<td style="padding:0;font-size:0;line-height:0;text-align:left;">
+<!--[if mso]>
+<table role="presentation" width="540" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="227" valign="top">
+<![endif]-->
+<div class="fabric-column fabric-image-column" style="display:inline-block;width:42%;max-width:226px;vertical-align:middle;">
+<img class="fabric-image" src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C54/assets/fab-poso.jpg" width="226" alt="Poso audinys - kampas Plush" style="display:block;width:100%;max-width:226px;height:auto;border:0;">
+</div>
+<!--[if mso]>
+</td>
+<td width="313" valign="middle">
+<![endif]-->
+<div class="fabric-column fabric-copy-column" style="display:inline-block;width:58%;max-width:314px;vertical-align:middle;padding:18px 22px 18px 20px;box-sizing:border-box;text-align:left;">
+<table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-bottom:10px;">
+<tbody>
+<tr>
+<td class="question-pill" bgcolor="#FFF1DC" style="border-radius:20px;font-family:Inter,Arial,sans-serif;font-size:11px;font-weight:700;line-height:1.35;color:#b7691f;padding:6px 13px;">Svarbiausia praktiškumas kasdienai?</td>
+</tr>
+</tbody>
+</table>
+<div class="fabric-title" style="font-family:Arial,sans-serif;font-size:21px;font-weight:800;color:#1c1a17;letter-spacing:-0.01em;line-height:1.2;margin-bottom:7px;">Poso audinys</div>
+<div class="body-copy" style="font-family:Inter,Arial,sans-serif;font-size:13.5px;font-weight:400;color:#6a635a;line-height:1.55;">Patvarus ir malonus liesti Poso audinys yra praktiškas pasirinkimas kasdienai bei kampui Plush su miego funkcija ir patalynės dėže.</div>
+</div>
+<!--[if mso]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
 
-<tr><td style="height:34px;font-size:0;background:#F5EEE3" height="34">&nbsp;</td></tr>
+<tr>
+<td height="34" style="height:34px;font-size:0;line-height:0;background-color:#F5EEE3;">&nbsp;</td>
+</tr>
 
-<!-- CLOSING CTA -->
-<tr><td class="pad-side" align="center" style="padding:0 44px 0 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.66;margin-bottom:24px">Kiekvienas audinys sukurtas jūsų namų jaukumui, tad rinkitės artimiausią savo gyvenimo būdui.</div>
-  <table border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr>
-    <td bgcolor="#1c1a17" style="border-radius:40px"><a href="https://plush.lt/collections/kampai" target="_blank" rel="noopener" style="display:inline-block;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:15px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;color:#ffffff;text-decoration:none;padding:15px 44px">Peržiūrėti kampus</a></td>
-  </tr></tbody></table>
-</td></tr>
+<tr>
+<td class="pad-side" align="center" style="padding:0 44px;background-color:#F5EEE3;">
+<div class="body-copy" style="font-family:Inter,Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.66;margin-bottom:24px;">Kiekvienas audinys sukurtas jūsų namų jaukumui, tad rinkitės artimiausią savo gyvenimo būdui.</div>
+<table role="presentation" class="cta-table" border="0" cellpadding="0" cellspacing="0" align="center">
+<tbody>
+<tr>
+<td class="cta-cell" align="center" bgcolor="#1c1a17" style="border-radius:40px;background-color:#1c1a17;">
+<a class="cta-link" href="https://plush.lt/collections/kampai" target="_blank" rel="noopener" style="display:inline-block;font-family:Arial,sans-serif;font-size:15px;font-weight:700;line-height:18px;letter-spacing:0.5px;text-transform:uppercase;color:#ffffff;text-decoration:none;padding:15px 44px;border-radius:40px;">Peržiūrėti kampus</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
 
-<tr><td style="height:34px;font-size:0;background:#F5EEE3" height="34">&nbsp;</td></tr>
+<tr>
+<td height="34" style="height:34px;font-size:0;line-height:0;background-color:#F5EEE3;">&nbsp;</td>
+</tr>
 
-<!-- SIGNOFF -->
-<tr><td class="pad-side" align="center" style="padding:0 44px 8px 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:600;color:#3a352f;line-height:1.6">Jūsų Plush komanda.</div>
-</td></tr>
+<tr>
+<td class="pad-side" align="center" style="padding:0 44px 8px 44px;background-color:#F5EEE3;">
+<div class="signoff" style="font-family:Inter,Arial,sans-serif;font-size:14px;font-weight:600;color:#3a352f;line-height:1.6;">Jūsų Plush komanda.</div>
+</td>
+</tr>
 
-<tr><td style="height:30px;font-size:0;background:#F5EEE3" height="30">&nbsp;</td></tr>
+<tr>
+<td height="30" style="height:30px;font-size:0;line-height:0;background-color:#F5EEE3;">&nbsp;</td>
+</tr>
 
-</tbody></table>
-</td></tr></tbody></table>
+</tbody>
+</table>
+<!--[if mso]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>
