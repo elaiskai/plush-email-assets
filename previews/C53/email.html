@@ -1,145 +1,384 @@
-<!--
-CAMPAIGN C53 v2: "Jaukioji Luna" - SINGLE-PRODUCT SPEC SPOTLIGHT
-================================================================
-Perdaryta 08-29. Naujas layout: vieno produkto spec deep-dive - hero (Luna kreminis studio) +
-kainos juosta su Sutaupai badge + 3 SAVYBIU eilutes (oranzinis dot + pavadinimas + desc) +
-SPALVU swatch eilute (3 dots: kreminis/pilkas/smelinis) + 2 detaliu kadrai (kampas + miego
-funkcija) su parasais. Skiriasi nuo C52 (foto istorija mood), C61 (sale), visu grid'u.
-Faktai PATIKRINTI: boucle audinys (ne velvetas), miego funkcija (unfolded kadras), 3 spalvos.
-Kainos realios plush.lt: 679 EUR (buvo 969).
--->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="lt">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="x-apple-disable-message-reformatting">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Jaukioji Luna</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" type="text/css">
 <style type="text/css">
-  @media (max-width:480px) {
-    .pad-side { padding-left:22px!important;padding-right:22px!important; }
-    .g-title { font-size:36px!important; }
-    .dcol { display:block!important;width:100%!important;padding:0 0 14px 0!important; }
+  html,
+  body {
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+  }
+  body,
+  table,
+  td,
+  a {
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+  }
+  table,
+  td {
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+    border-collapse:collapse;
+  }
+  img {
+    display:block;
+    height:auto;
+    border:0;
+    outline:none;
+    text-decoration:none;
+    -ms-interpolation-mode:bicubic;
+  }
+  a {
+    text-decoration:none;
+  }
+  .detail-column,
+  .swatch-column {
+    display:inline-block;
+    vertical-align:top;
+  }
+  .detail-column {
+    width:50%;
+    max-width:270px;
+  }
+  .swatch-column {
+    width:33.333333%;
+    max-width:173px;
+  }
+  @media only screen and (max-width:480px) {
+    .email-container {
+      width:100% !important;
+      max-width:100% !important;
+    }
+    .pad-side {
+      padding-left:22px !important;
+      padding-right:22px !important;
+    }
+    .hero-pad {
+      padding-left:16px !important;
+      padding-right:16px !important;
+    }
+    .detail-pad {
+      padding-left:22px !important;
+      padding-right:22px !important;
+    }
+    .g-title {
+      font-size:34px !important;
+      line-height:1.08 !important;
+    }
+    .body-copy,
+    .feature-copy,
+    .closing-copy {
+      font-size:16px !important;
+      line-height:1.55 !important;
+    }
+    .feature-title {
+      font-size:17px !important;
+      line-height:1.35 !important;
+    }
+    .detail-caption,
+    .swatch-label,
+    .signoff {
+      font-size:16px !important;
+      line-height:1.45 !important;
+    }
+    .detail-column,
+    .swatch-column {
+      display:block !important;
+      width:100% !important;
+      max-width:100% !important;
+    }
+    .detail-column-first {
+      padding:0 0 20px 0 !important;
+    }
+    .detail-column-last {
+      padding:0 !important;
+    }
+    .detail-image {
+      width:100% !important;
+      max-width:100% !important;
+    }
+    .swatch-column {
+      padding:0 0 14px 0 !important;
+    }
+    .swatch-column-last {
+      padding-bottom:0 !important;
+    }
+    .price-wrap {
+      width:100% !important;
+    }
+    .price-row {
+      text-align:center !important;
+    }
+    .price-current {
+      font-size:28px !important;
+    }
+    .cta-table,
+    .cta-cell,
+    .cta-link {
+      width:100% !important;
+    }
+    .cta-link {
+      display:block !important;
+      box-sizing:border-box !important;
+      min-height:48px !important;
+      padding:16px 20px !important;
+      text-align:center !important;
+    }
   }
 </style>
 </head>
-<body style="width:100%;-webkit-text-size-adjust:100%;background-color:#E7DECF;margin:0;padding:0">
-<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#E7DECF">Švelnus boucle, erdvi kušetė ir miego funkcija. Dabar Luna tik 679 €.</div>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#E7DECF"><tbody><tr><td>
-<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;background-color:#F5EEE3"><tbody>
+<body style="width:100%;margin:0;padding:0;background-color:#E7DECF;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#E7DECF;">Švelnus boucle, erdvi kušetė ir miego funkcija. Dabar Luna tik 679 €.</div>
 
-<!-- LOGO -->
-<tr><td align="center" style="padding:26px 0 20px 0;background:#F5EEE3"><a href="https://plush.lt" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/logo/plush-wordmark.png" width="122" alt="PLUSH" style="display:block;width:122px;max-width:122px;height:auto;border:0"></a></td></tr>
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#E7DECF" style="width:100%;background-color:#E7DECF;">
+  <tr>
+    <td align="center" valign="top">
+      <!--[if mso]>
+      <table role="presentation" width="600" border="0" cellpadding="0" cellspacing="0" align="center">
+        <tr>
+          <td>
+      <![endif]-->
+      <table role="presentation" class="email-container" width="100%" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#F5EEE3" style="width:100%;max-width:600px;margin:0 auto;background-color:#F5EEE3;">
+        <tr>
+          <td align="center" style="padding:26px 0 20px 0;background-color:#F5EEE3;">
+            <a href="https://plush.lt" target="_blank" rel="noopener" style="display:inline-block;">
+              <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/logo/plush-wordmark.png" width="122" alt="PLUSH" style="display:block;width:122px;max-width:122px;height:auto;border:0;">
+            </a>
+          </td>
+        </tr>
 
-<!-- MASTHEAD -->
-<tr><td class="pad-side" align="center" style="padding:4px 44px 0 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:#FFA400;margin-bottom:13px">Rudens pažintis</div>
-  <div class="g-title" style="font-family:'Bricolage Grotesque','Arial Black',Arial,sans-serif;font-size:40px;font-weight:800;color:#1c1a17;letter-spacing:-0.02em;line-height:1.05;margin-bottom:13px">Jaukioji Luna</div>
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.65">Susipažinkite su Luna - kampu, kuris namus pripildo švelnumo ir ramaus jaukumo. Minkštas boucle audinys kviečia įsitaisyti ir mėgautis lėtais rudens vakarais.</div>
-</td></tr>
+        <tr>
+          <td class="pad-side" align="center" style="padding:4px 44px 0 44px;background-color:#F5EEE3;">
+            <div style="font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:#FFA400;margin-bottom:13px;">Rudens pažintis</div>
+            <div class="g-title" style="font-family:'Bricolage Grotesque','Arial Black',Arial,sans-serif;font-size:40px;font-weight:800;color:#1c1a17;letter-spacing:-0.02em;line-height:1.05;margin-bottom:13px;">Jaukioji Luna</div>
+            <div class="body-copy" style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.65;">Susipažinkite su Luna - kampu, kuris namus pripildo švelnumo ir ramaus jaukumo. Minkštas boucle audinys kviečia įsitaisyti ir mėgautis lėtais rudens vakarais.</div>
+          </td>
+        </tr>
 
-<tr><td style="height:22px;font-size:0;background:#F5EEE3" height="22">&nbsp;</td></tr>
+        <tr>
+          <td height="22" style="height:22px;font-size:0;line-height:0;background-color:#F5EEE3;"> </td>
+        </tr>
 
-<!-- HERO -->
-<tr><td style="padding:0 24px;background:#F5EEE3"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C53/assets/hero.jpg" width="552" alt="Kampas Luna kreminis" style="display:block;width:100%;height:auto;max-width:552px;border-radius:14px;border:0"></td></tr>
+        <tr>
+          <td class="hero-pad" style="padding:0 24px;background-color:#F5EEE3;">
+            <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C53/assets/hero.jpg" width="552" alt="Kampas Luna kreminis" style="display:block;width:100%;max-width:552px;height:auto;border-radius:14px;border:0;">
+          </td>
+        </tr>
 
-<!-- PRICE BAR -->
-<tr><td class="pad-side" align="center" style="padding:20px 44px 0 44px;background:#F5EEE3">
-  <table border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr>
-    <td valign="middle" style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:28px;font-weight:800;color:#1c1a17;padding-right:12px">679 €</td>
-    <td valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:500;color:#b3a795;text-decoration:line-through;padding-right:14px">969 €</td>
-    <td valign="middle"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td bgcolor="#FFA400" style="border-radius:30px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:12px;font-weight:800;color:#1c1a17;padding:7px 14px">Sutaupai 290 €</td></tr></tbody></table></td>
-  </tr></tbody></table>
-</td></tr>
+        <tr>
+          <td class="pad-side" align="center" style="padding:20px 44px 0 44px;background-color:#F5EEE3;">
+            <table role="presentation" class="price-wrap" border="0" cellpadding="0" cellspacing="0" align="center">
+              <tr>
+                <td class="price-row" align="center">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                      <td class="price-current" valign="middle" style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:28px;font-weight:800;color:#1c1a17;padding-right:12px;white-space:nowrap;">679 €</td>
+                      <td valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:500;color:#b3a795;text-decoration:line-through;padding-right:14px;white-space:nowrap;">969 €</td>
+                      <td valign="middle">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td bgcolor="#FFA400" style="border-radius:30px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:12px;font-weight:800;color:#1c1a17;padding:7px 14px;white-space:nowrap;">Sutaupai 290 €</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
-<tr><td style="height:30px;font-size:0;background:#F5EEE3" height="30">&nbsp;</td></tr>
+        <tr>
+          <td height="30" style="height:30px;font-size:0;line-height:0;background-color:#F5EEE3;"> </td>
+        </tr>
 
-<!-- FEATURES -->
-<tr><td class="pad-side" style="padding:0 40px;background:#F5EEE3">
+        <tr>
+          <td class="pad-side" style="padding:0 40px;background-color:#F5EEE3;">
+            <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;margin-bottom:16px;">
+              <tr>
+                <td width="14" valign="top" style="width:14px;">
+                  <div style="width:9px;height:9px;background-color:#FFA400;border-radius:50%;margin-top:7px;font-size:0;line-height:0;"> </div>
+                </td>
+                <td valign="top" style="padding-left:14px;">
+                  <div class="feature-title" style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;font-weight:800;color:#1c1a17;line-height:1.35;margin-bottom:3px;">Švelnus boucle</div>
+                  <div class="feature-copy" style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:400;color:#6a635a;line-height:1.55;">Garbanotas avikailio tipo boucle audinys maloniai apgaubia švelnumu.</div>
+                </td>
+              </tr>
+            </table>
 
-  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom:16px"><tbody><tr>
-    <td width="14" valign="top"><div style="width:9px;height:9px;background:#FFA400;border-radius:50%;margin-top:6px"></div></td>
-    <td valign="top" style="padding-left:14px">
-      <div style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;font-weight:800;color:#1c1a17;margin-bottom:3px">Švelnus boucle</div>
-      <div style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:400;color:#6a635a;line-height:1.55">Garbanotas avikailio tipo boucle audinys maloniai apgaubia švelnumu.</div>
+            <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;margin-bottom:16px;">
+              <tr>
+                <td width="14" valign="top" style="width:14px;">
+                  <div style="width:9px;height:9px;background-color:#FFA400;border-radius:50%;margin-top:7px;font-size:0;line-height:0;"> </div>
+                </td>
+                <td valign="top" style="padding-left:14px;">
+                  <div class="feature-title" style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;font-weight:800;color:#1c1a17;line-height:1.35;margin-bottom:3px;">Miego funkcija</div>
+                  <div class="feature-copy" style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:400;color:#6a635a;line-height:1.55;">Luna lengvai transformuojasi į patogią miegamą vietą.</div>
+                </td>
+              </tr>
+            </table>
+
+            <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+              <tr>
+                <td width="14" valign="top" style="width:14px;">
+                  <div style="width:9px;height:9px;background-color:#FFA400;border-radius:50%;margin-top:7px;font-size:0;line-height:0;"> </div>
+                </td>
+                <td valign="top" style="padding-left:14px;">
+                  <div class="feature-title" style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;font-weight:800;color:#1c1a17;line-height:1.35;margin-bottom:3px;">Erdvi kušetė</div>
+                  <div class="feature-copy" style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:400;color:#6a635a;line-height:1.55;">Erdvi kušetė suteikia daugiau vietos patogiam poilsiui.</div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td height="28" style="height:28px;font-size:0;line-height:0;background-color:#F5EEE3;"> </td>
+        </tr>
+
+        <tr>
+          <td class="pad-side" style="padding:0 40px;background-color:#F5EEE3;">
+            <div style="font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#b7a888;margin-bottom:14px;">Trys spalvos</div>
+            <div style="font-size:0;text-align:left;">
+              <!--[if mso]>
+              <table role="presentation" width="520" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="173" valign="top">
+              <![endif]-->
+              <div class="swatch-column" style="display:inline-block;width:33.333333%;max-width:173px;vertical-align:top;padding:0;">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="middle">
+                      <div style="width:26px;height:26px;background-color:#EDE6D8;border:1px solid #d8cfbf;border-radius:50%;font-size:0;line-height:0;"> </div>
+                    </td>
+                    <td class="swatch-label" valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:13px;font-weight:600;color:#3a352f;padding-left:8px;">Kreminis</td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso]>
+                  </td>
+                  <td width="173" valign="top">
+              <![endif]-->
+              <div class="swatch-column" style="display:inline-block;width:33.333333%;max-width:173px;vertical-align:top;padding:0;">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="middle">
+                      <div style="width:26px;height:26px;background-color:#B9B7B3;border:1px solid #a7a5a1;border-radius:50%;font-size:0;line-height:0;"> </div>
+                    </td>
+                    <td class="swatch-label" valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:13px;font-weight:600;color:#3a352f;padding-left:8px;">Pilkas</td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso]>
+                  </td>
+                  <td width="174" valign="top">
+              <![endif]-->
+              <div class="swatch-column swatch-column-last" style="display:inline-block;width:33.333333%;max-width:173px;vertical-align:top;padding:0;">
+                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="middle">
+                      <div style="width:26px;height:26px;background-color:#D6C4A6;border:1px solid #c3b192;border-radius:50%;font-size:0;line-height:0;"> </div>
+                    </td>
+                    <td class="swatch-label" valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:13px;font-weight:600;color:#3a352f;padding-left:8px;">Smėlinis</td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso]>
+                  </td>
+                </tr>
+              </table>
+              <![endif]-->
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td height="28" style="height:28px;font-size:0;line-height:0;background-color:#F5EEE3;"> </td>
+        </tr>
+
+        <tr>
+          <td class="detail-pad" style="padding:0 30px;background-color:#F5EEE3;">
+            <div style="font-size:0;text-align:center;">
+              <!--[if mso]>
+              <table role="presentation" width="540" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="270" valign="top" style="padding-right:8px;">
+              <![endif]-->
+              <div class="detail-column detail-column-first" style="display:inline-block;width:50%;max-width:270px;vertical-align:top;padding:0 8px 0 0;box-sizing:border-box;">
+                <img class="detail-image" src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C53/assets/detail-angle.jpg" width="262" alt="Luna iš šono" style="display:block;width:100%;max-width:262px;height:auto;border-radius:12px;border:0;margin-bottom:8px;">
+                <div class="detail-caption" style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:500;color:#6a635a;line-height:1.45;text-align:center;">Švelnios apvalios linijos</div>
+              </div>
+              <!--[if mso]>
+                  </td>
+                  <td width="270" valign="top" style="padding-left:8px;">
+              <![endif]-->
+              <div class="detail-column detail-column-last" style="display:inline-block;width:50%;max-width:270px;vertical-align:top;padding:0 0 0 8px;box-sizing:border-box;">
+                <img class="detail-image" src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C53/assets/detail-bed.jpg" width="262" alt="Luna miego funkcija" style="display:block;width:100%;max-width:262px;height:auto;border-radius:12px;border:0;margin-bottom:8px;">
+                <div class="detail-caption" style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:500;color:#6a635a;line-height:1.45;text-align:center;">Išskleidžiama miegui</div>
+              </div>
+              <!--[if mso]>
+                  </td>
+                </tr>
+              </table>
+              <![endif]-->
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td height="34" style="height:34px;font-size:0;line-height:0;background-color:#F5EEE3;"> </td>
+        </tr>
+
+        <tr>
+          <td class="pad-side" align="center" style="padding:0 44px;background-color:#F5EEE3;">
+            <div class="closing-copy" style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.66;margin-bottom:24px;">Išsirinkite kreminę, pilką ar smėlinę Luna savo namams už 679 € vietoje 969 €.</div>
+            <table role="presentation" class="cta-table" border="0" cellpadding="0" cellspacing="0" align="center">
+              <tr>
+                <td class="cta-cell" align="center" bgcolor="#1c1a17" style="border-radius:40px;">
+                  <!--[if mso]>
+                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://plush.lt/products/kampas-luna-kreminis" style="height:50px;v-text-anchor:middle;width:210px;" arcsize="80%" stroke="f" fillcolor="#1c1a17">
+                    <w:anchorlock/>
+                    <center style="font-family:Arial,sans-serif;font-size:15px;font-weight:700;color:#ffffff;">Atrasti Luna</center>
+                  </v:roundrect>
+                  <![endif]-->
+                  <!--[if !mso]><!-->
+                  <a class="cta-link" href="https://plush.lt/products/kampas-luna-kreminis" target="_blank" rel="noopener" style="display:inline-block;box-sizing:border-box;min-height:48px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:15px;font-weight:700;letter-spacing:0.5px;line-height:20px;text-transform:uppercase;color:#ffffff;text-decoration:none;padding:15px 44px;border-radius:40px;background-color:#1c1a17;">Atrasti Luna</a>
+                  <!--<![endif]-->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td height="34" style="height:34px;font-size:0;line-height:0;background-color:#F5EEE3;"> </td>
+        </tr>
+
+        <tr>
+          <td class="pad-side" align="center" style="padding:0 44px 8px 44px;background-color:#F5EEE3;">
+            <div class="signoff" style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:600;color:#3a352f;line-height:1.6;">Jaukiai, Plush komanda.</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td height="30" style="height:30px;font-size:0;line-height:0;background-color:#F5EEE3;"> </td>
+        </tr>
+      </table>
+      <!--[if mso]>
+          </td>
+        </tr>
+      </table>
+      <![endif]-->
     </td>
-  </tr></tbody></table>
-
-  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="margin-bottom:16px"><tbody><tr>
-    <td width="14" valign="top"><div style="width:9px;height:9px;background:#FFA400;border-radius:50%;margin-top:6px"></div></td>
-    <td valign="top" style="padding-left:14px">
-      <div style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;font-weight:800;color:#1c1a17;margin-bottom:3px">Miego funkcija</div>
-      <div style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:400;color:#6a635a;line-height:1.55">Luna lengvai transformuojasi į patogią miegamą vietą.</div>
-    </td>
-  </tr></tbody></table>
-
-  <table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-    <td width="14" valign="top"><div style="width:9px;height:9px;background:#FFA400;border-radius:50%;margin-top:6px"></div></td>
-    <td valign="top" style="padding-left:14px">
-      <div style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;font-weight:800;color:#1c1a17;margin-bottom:3px">Erdvi kušetė</div>
-      <div style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:400;color:#6a635a;line-height:1.55">Erdvi kušetė suteikia daugiau vietos patogiam poilsiui.</div>
-    </td>
-  </tr></tbody></table>
-
-</td></tr>
-
-<tr><td style="height:28px;font-size:0;background:#F5EEE3" height="28">&nbsp;</td></tr>
-
-<!-- COLOR SWATCH -->
-<tr><td class="pad-side" style="padding:0 40px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#b7a888;margin-bottom:14px">Trys spalvos</div>
-  <table border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-    <td valign="middle" style="padding-right:22px"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-      <td valign="middle"><div style="width:26px;height:26px;background:#EDE6D8;border:1px solid #d8cfbf;border-radius:50%"></div></td>
-      <td valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:13px;font-weight:600;color:#3a352f;padding-left:8px">Kreminis</td>
-    </tr></tbody></table></td>
-    <td valign="middle" style="padding-right:22px"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-      <td valign="middle"><div style="width:26px;height:26px;background:#B9B7B3;border:1px solid #a7a5a1;border-radius:50%"></div></td>
-      <td valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:13px;font-weight:600;color:#3a352f;padding-left:8px">Pilkas</td>
-    </tr></tbody></table></td>
-    <td valign="middle"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-      <td valign="middle"><div style="width:26px;height:26px;background:#D6C4A6;border:1px solid #c3b192;border-radius:50%"></div></td>
-      <td valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:13px;font-weight:600;color:#3a352f;padding-left:8px">Smėlinis</td>
-    </tr></tbody></table></td>
-  </tr></tbody></table>
-</td></tr>
-
-<tr><td style="height:28px;font-size:0;background:#F5EEE3" height="28">&nbsp;</td></tr>
-
-<!-- DETAIL SHOTS -->
-<tr><td class="pad-side" style="padding:0 30px;background:#F5EEE3">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-    <td class="dcol" width="50%" valign="top" style="padding:0 8px 0 0">
-      <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C53/assets/detail-angle.jpg" width="264" alt="Luna iš šono" style="display:block;width:100%;height:auto;max-width:264px;border-radius:12px;border:0;margin-bottom:8px">
-      <div style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:500;color:#6a635a;text-align:center">Švelnios apvalios linijos</div>
-    </td>
-    <td class="dcol" width="50%" valign="top" style="padding:0 0 0 8px">
-      <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C53/assets/detail-bed.jpg" width="264" alt="Luna miego funkcija" style="display:block;width:100%;height:auto;max-width:264px;border-radius:12px;border:0;margin-bottom:8px">
-      <div style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:500;color:#6a635a;text-align:center">Išskleidžiama miegui</div>
-    </td>
-  </tr></tbody></table>
-</td></tr>
-
-<tr><td style="height:34px;font-size:0;background:#F5EEE3" height="34">&nbsp;</td></tr>
-
-<!-- CLOSING CTA -->
-<tr><td class="pad-side" align="center" style="padding:0 44px 0 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.66;margin-bottom:24px">Išsirinkite kreminę, pilką ar smėlinę Luna savo namams už 679 € vietoje 969 €.</div>
-  <table border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr>
-    <td bgcolor="#1c1a17" style="border-radius:40px"><a href="https://plush.lt/products/kampas-luna-kreminis" target="_blank" rel="noopener" style="display:inline-block;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:15px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;color:#ffffff;text-decoration:none;padding:15px 44px">Atrasti Luna</a></td>
-  </tr></tbody></table>
-</td></tr>
-
-<tr><td style="height:34px;font-size:0;background:#F5EEE3" height="34">&nbsp;</td></tr>
-
-<!-- SIGNOFF -->
-<tr><td class="pad-side" align="center" style="padding:0 44px 8px 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:600;color:#3a352f;line-height:1.6">Jaukiai, Plush komanda.</div>
-</td></tr>
-
-<tr><td style="height:30px;font-size:0;background:#F5EEE3" height="30">&nbsp;</td></tr>
-
-</tbody></table>
-</td></tr></tbody></table>
+  </tr>
+</table>
 </body>
 </html>
