@@ -1,118 +1,291 @@
-<!--
-CAMPAIGN C63 v2: "Paskutinė rudens kainų diena" - TYPOGRAPHIC URGENCY POSTER
-============================================================================
-Perdaryta 08-29. Naujas layout: BE foto hero - tipografinis urgency posteris. Didele
-tamsi urgency PANELE (oranzinis "Paskutine diena" badge + milzinis title + "Rytoj kainos
-grizta" note + CTA panej viduje) + minimali "Primename" 2-produktu eilute su kainom.
-Skiriasi nuo C61 (hero+featured+grid), C62 (2x2 grid), visu foto-hero laisku. Kainos realios.
-Scarcity = akcijos paskutine diena (Lukas patvirtina akcijos pabaigos data).
--->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="lt">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="x-apple-disable-message-reformatting">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" type="text/css">
 <style type="text/css">
-  @media (max-width:480px) {
-    .pad-side { padding-left:22px!important;padding-right:22px!important; }
-    .u-title { font-size:38px!important; }
-    .rcol { display:block!important;width:100%!important;padding:0 0 14px 0!important; }
+  html,
+  body {
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+  }
+  body,
+  table,
+  td,
+  a {
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+  }
+  table,
+  td {
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+    border-collapse:collapse;
+  }
+  img {
+    display:block;
+    height:auto;
+    border:0;
+    outline:none;
+    text-decoration:none;
+    -ms-interpolation-mode:bicubic;
+  }
+  a {
+    text-decoration:none;
+  }
+  .product-column {
+    display:inline-block;
+    width:50%;
+    max-width:270px;
+    vertical-align:top;
+  }
+  .product-image {
+    width:100%;
+    max-width:264px;
+    height:auto;
+  }
+  @media only screen and (max-width:480px) {
+    .mobile-shell {
+      width:100% !important;
+      max-width:100% !important;
+    }
+    .mobile-side {
+      padding-left:16px !important;
+      padding-right:16px !important;
+    }
+    .mobile-panel {
+      padding-left:22px !important;
+      padding-right:22px !important;
+      padding-top:36px !important;
+      padding-bottom:36px !important;
+    }
+    .u-title {
+      font-size:36px !important;
+      line-height:1.08 !important;
+      letter-spacing:-0.02em !important;
+    }
+    .body-copy {
+      font-size:16px !important;
+      line-height:1.55 !important;
+    }
+    .product-column {
+      display:block !important;
+      width:100% !important;
+      max-width:100% !important;
+    }
+    .product-column-left,
+    .product-column-right {
+      padding-left:0 !important;
+      padding-right:0 !important;
+    }
+    .product-column-left {
+      padding-bottom:16px !important;
+    }
+    .product-image {
+      width:100% !important;
+      max-width:100% !important;
+      height:auto !important;
+    }
+    .product-title {
+      font-size:18px !important;
+    }
+    .product-copy {
+      font-size:16px !important;
+      line-height:1.45 !important;
+    }
+    .price-current {
+      font-size:20px !important;
+    }
+    .price-old {
+      font-size:16px !important;
+    }
+    .mobile-cta-table {
+      width:100% !important;
+    }
+    .mobile-cta-cell {
+      width:100% !important;
+    }
+    .mobile-cta {
+      display:block !important;
+      box-sizing:border-box !important;
+      width:100% !important;
+      min-height:48px !important;
+      padding:15px 18px !important;
+      text-align:center !important;
+    }
+    .closing-side {
+      padding-left:22px !important;
+      padding-right:22px !important;
+    }
   }
 </style>
 </head>
-<body style="width:100%;-webkit-text-size-adjust:100%;background-color:#E7DECF;margin:0;padding:0">
-<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#E7DECF">Rudens kainos baigiasi šiandien vakare. Paskutinis priminimas neatidėlioti.</div>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#E7DECF"><tbody><tr><td>
-<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;background-color:#F5EEE3"><tbody>
+<body style="width:100%;margin:0;padding:0;background-color:#E7DECF;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#E7DECF;">Rudens kainos baigiasi šiandien vakare. Paskutinis priminimas neatidėlioti.</div>
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#E7DECF" style="width:100%;background-color:#E7DECF;">
+  <tr>
+    <td align="center" valign="top">
+      <!--[if mso]>
+      <table role="presentation" width="600" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+      <![endif]-->
+      <table role="presentation" class="mobile-shell" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#F5EEE3" style="width:100%;max-width:600px;margin:0 auto;background-color:#F5EEE3;">
+        <tr>
+          <td align="center" bgcolor="#F5EEE3" style="padding:26px 0 20px 0;background-color:#F5EEE3;">
+            <a href="https://plush.lt" target="_blank" rel="noopener" style="display:inline-block;">
+              <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/logo/plush-wordmark.png" width="122" alt="PLUSH" style="display:block;width:122px;max-width:122px;height:auto;border:0;">
+            </a>
+          </td>
+        </tr>
 
-<!-- LOGO -->
-<tr><td align="center" style="padding:26px 0 20px 0;background:#F5EEE3"><a href="https://plush.lt" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/logo/plush-wordmark.png" width="122" alt="PLUSH" style="display:block;width:122px;max-width:122px;height:auto;border:0"></a></td></tr>
+        <tr>
+          <td class="mobile-side" bgcolor="#F5EEE3" style="padding:0 24px;background-color:#F5EEE3;">
+            <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#1c1a17" style="width:100%;background-color:#1c1a17;border-radius:18px;">
+              <tr>
+                <td class="mobile-panel" align="center" style="padding:44px 34px 40px 34px;border-radius:18px;">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto 20px auto;">
+                    <tr>
+                      <td bgcolor="#FFA400" style="padding:8px 18px;border-radius:30px;font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#1c1a17;">Paskutinė diena</td>
+                    </tr>
+                  </table>
 
-<!-- URGENCY PANEL (dark) -->
-<tr><td style="padding:0 24px;background:#F5EEE3">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#1c1a17;border-radius:18px"><tbody><tr>
-    <td align="center" style="padding:44px 34px 40px 34px">
-      <table border="0" cellpadding="0" cellspacing="0" align="center" style="margin-bottom:20px"><tbody><tr>
-        <td bgcolor="#FFA400" style="border-radius:30px;font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#1c1a17;padding:8px 18px">Paskutinė diena</td>
-      </tr></tbody></table>
-      <div class="u-title" style="font-family:'Bricolage Grotesque','Arial Black',Arial,sans-serif;font-size:42px;font-weight:800;color:#ffffff;letter-spacing:-0.02em;line-height:1.05;margin-bottom:16px">Rudens kainos baigiasi šiandien</div>
-      <div style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#cfc7bb;line-height:1.6;margin-bottom:22px">Šiandien paskutinė proga išsirinkti minkštus baldus rudens kainomis. Vakare pasiūlymas baigsis.</div>
-      <div style="font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#FFA400;margin-bottom:26px">Rytoj kainos grįžta</div>
-      <table border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr>
-        <td bgcolor="#FFA400" style="border-radius:40px"><a href="https://plush.lt/collections/kampai" target="_blank" rel="noopener" style="display:inline-block;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:15px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;color:#1c1a17;text-decoration:none;padding:15px 42px">Išsirinkti šiandien</a></td>
-      </tr></tbody></table>
+                  <div class="u-title" style="margin:0 0 16px 0;font-family:'Bricolage Grotesque','Arial Black',Arial,sans-serif;font-size:42px;font-weight:800;color:#ffffff;letter-spacing:-0.02em;line-height:1.05;">Rudens kainos baigiasi šiandien</div>
+
+                  <div class="body-copy" style="margin:0 0 22px 0;font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#cfc7bb;line-height:1.6;">Šiandien paskutinė proga išsirinkti minkštus baldus rudens kainomis. Vakare pasiūlymas baigsis.</div>
+
+                  <div style="margin:0 0 26px 0;font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#FFA400;">Rytoj kainos grįžta</div>
+
+                  <table role="presentation" class="mobile-cta-table" border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;">
+                    <tr>
+                      <td class="mobile-cta-cell" align="center" bgcolor="#FFA400" style="border-radius:40px;">
+                        <a class="mobile-cta" href="https://plush.lt/collections/kampai" target="_blank" rel="noopener" style="display:inline-block;padding:15px 42px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:15px;font-weight:700;letter-spacing:0.5px;line-height:18px;text-transform:uppercase;color:#1c1a17;text-decoration:none;border-radius:40px;">Išsirinkti šiandien</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td height="34" bgcolor="#F5EEE3" style="height:34px;font-size:0;line-height:0;background-color:#F5EEE3;">&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td class="mobile-side" align="center" bgcolor="#F5EEE3" style="padding:0 44px 18px 44px;background-color:#F5EEE3;">
+            <div style="font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#b7a888;">Primename rudens kainas</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="mobile-side" align="center" bgcolor="#F5EEE3" style="padding:0 30px;background-color:#F5EEE3;font-size:0;text-align:center;">
+            <!--[if mso]>
+            <table role="presentation" width="540" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="270" valign="top">
+            <![endif]-->
+            <div class="product-column product-column-left" style="display:inline-block;width:50%;max-width:270px;vertical-align:top;padding:0 8px 0 0;box-sizing:border-box;">
+              <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%;background-color:#ffffff;border-radius:14px;overflow:hidden;">
+                <tr>
+                  <td style="padding:0;">
+                    <a href="https://plush.lt/products/kampas-mango" target="_blank" rel="noopener" style="display:block;">
+                      <img class="product-image" src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C63/assets/prod-mango.jpg" width="264" alt="Kampas Mango terracotta" style="display:block;width:100%;max-width:264px;height:auto;border:0;">
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding:13px 14px 16px 14px;">
+                    <div class="product-title" style="margin:0 0 3px 0;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;font-weight:800;color:#1c1a17;">Kampas Mango</div>
+                    <div class="product-copy" style="margin:0 0 9px 0;font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:400;color:#6a635a;line-height:1.45;">Terracotta spalvos kampas Mango</div>
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center">
+                      <tr>
+                        <td class="price-current" style="padding-right:8px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:18px;font-weight:800;color:#1c1a17;">539 €</td>
+                        <td class="price-old" valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:500;color:#b3a795;text-decoration:line-through;">969 €</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--[if mso]>
+                </td>
+                <td width="270" valign="top">
+            <![endif]-->
+            <div class="product-column product-column-right" style="display:inline-block;width:50%;max-width:270px;vertical-align:top;padding:0 0 0 8px;box-sizing:border-box;">
+              <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%;background-color:#ffffff;border-radius:14px;overflow:hidden;">
+                <tr>
+                  <td style="padding:0;">
+                    <a href="https://plush.lt/products/kampas-sofi-smelinis" target="_blank" rel="noopener" style="display:block;">
+                      <img class="product-image" src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C63/assets/prod-sofi.jpg" width="264" alt="Kampas Sofi smėlinis" style="display:block;width:100%;max-width:264px;height:auto;border:0;">
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding:13px 14px 16px 14px;">
+                    <div class="product-title" style="margin:0 0 3px 0;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;font-weight:800;color:#1c1a17;">Kampas Sofi</div>
+                    <div class="product-copy" style="margin:0 0 9px 0;font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:400;color:#6a635a;line-height:1.45;">Smėlinės spalvos kampas Sofi</div>
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center">
+                      <tr>
+                        <td class="price-current" style="padding-right:8px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:18px;font-weight:800;color:#1c1a17;">579 €</td>
+                        <td class="price-old" valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:500;color:#b3a795;text-decoration:line-through;">699 €</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--[if mso]>
+                </td>
+              </tr>
+            </table>
+            <![endif]-->
+          </td>
+        </tr>
+
+        <tr>
+          <td height="32" bgcolor="#F5EEE3" style="height:32px;font-size:0;line-height:0;background-color:#F5EEE3;">&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td class="closing-side" align="center" bgcolor="#F5EEE3" style="padding:0 44px;background-color:#F5EEE3;">
+            <div class="body-copy" style="margin:0 0 24px 0;font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.66;">Nepraleiskite progos namams suteikti daugiau jaukumo už rudens kainą.</div>
+
+            <table role="presentation" class="mobile-cta-table" border="0" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto;">
+              <tr>
+                <td class="mobile-cta-cell" align="center" bgcolor="#1c1a17" style="border-radius:40px;">
+                  <a class="mobile-cta" href="https://plush.lt/collections/kampai" target="_blank" rel="noopener" style="display:inline-block;padding:15px 44px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:15px;font-weight:700;letter-spacing:0.5px;line-height:18px;text-transform:uppercase;color:#ffffff;text-decoration:none;border-radius:40px;">Išsirinkti šiandien</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td height="32" bgcolor="#F5EEE3" style="height:32px;font-size:0;line-height:0;background-color:#F5EEE3;">&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td class="closing-side" align="center" bgcolor="#F5EEE3" style="padding:0 44px 8px 44px;background-color:#F5EEE3;">
+            <div style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:600;color:#3a352f;line-height:1.6;">Su jaukumu, Plush komanda.</div>
+          </td>
+        </tr>
+
+        <tr>
+          <td height="30" bgcolor="#F5EEE3" style="height:30px;font-size:0;line-height:0;background-color:#F5EEE3;">&nbsp;</td>
+        </tr>
+      </table>
+      <!--[if mso]>
+          </td>
+        </tr>
+      </table>
+      <![endif]-->
     </td>
-  </tr></tbody></table>
-</td></tr>
-
-<tr><td style="height:34px;font-size:0;background:#F5EEE3" height="34">&nbsp;</td></tr>
-
-<!-- REMINDER ROW LABEL -->
-<tr><td class="pad-side" align="center" style="padding:0 44px 18px 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#b7a888">Primename rudens kainas</div>
-</td></tr>
-
-<!-- 2-PRODUCT REMINDER ROW -->
-<tr><td class="pad-side" style="padding:0 30px;background:#F5EEE3">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-
-    <td class="rcol" width="50%" valign="top" style="padding:0 8px 0 0">
-      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:14px;overflow:hidden"><tbody>
-        <tr><td style="padding:0">
-          <a href="https://plush.lt/products/kampas-mango" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C63/assets/prod-mango.jpg" width="264" alt="Kampas Mango terracotta" style="display:block;width:100%;height:auto;max-width:264px;border:0"></a>
-        </td></tr>
-        <tr><td align="center" style="padding:13px 14px 16px 14px">
-          <div style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;font-weight:800;color:#1c1a17;margin-bottom:3px">Kampas Mango</div>
-          <div style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:400;color:#6a635a;line-height:1.45;margin-bottom:9px">Terracotta spalvos kampas Mango</div>
-          <table border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr>
-            <td style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:18px;font-weight:800;color:#1c1a17;padding-right:8px">539 €</td>
-            <td valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:500;color:#b3a795;text-decoration:line-through">969 €</td>
-          </tr></tbody></table>
-        </td></tr>
-      </tbody></table>
-    </td>
-
-    <td class="rcol" width="50%" valign="top" style="padding:0 0 0 8px">
-      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:14px;overflow:hidden"><tbody>
-        <tr><td style="padding:0">
-          <a href="https://plush.lt/products/kampas-sofi-smelinis" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C63/assets/prod-sofi.jpg" width="264" alt="Kampas Sofi smėlinis" style="display:block;width:100%;height:auto;max-width:264px;border:0"></a>
-        </td></tr>
-        <tr><td align="center" style="padding:13px 14px 16px 14px">
-          <div style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;font-weight:800;color:#1c1a17;margin-bottom:3px">Kampas Sofi</div>
-          <div style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:400;color:#6a635a;line-height:1.45;margin-bottom:9px">Smėlinės spalvos kampas Sofi</div>
-          <table border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr>
-            <td style="font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:18px;font-weight:800;color:#1c1a17;padding-right:8px">579 €</td>
-            <td valign="middle" style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:500;color:#b3a795;text-decoration:line-through">699 €</td>
-          </tr></tbody></table>
-        </td></tr>
-      </tbody></table>
-    </td>
-
-  </tr></tbody></table>
-</td></tr>
-
-<tr><td style="height:32px;font-size:0;background:#F5EEE3" height="32">&nbsp;</td></tr>
-
-<!-- CLOSING -->
-<tr><td class="pad-side" align="center" style="padding:0 44px 0 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.66;margin-bottom:24px">Nepraleiskite progos namams suteikti daugiau jaukumo už rudens kainą.</div>
-  <table border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr>
-    <td bgcolor="#1c1a17" style="border-radius:40px"><a href="https://plush.lt/collections/kampai" target="_blank" rel="noopener" style="display:inline-block;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:15px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;color:#ffffff;text-decoration:none;padding:15px 44px">Išsirinkti šiandien</a></td>
-  </tr></tbody></table>
-</td></tr>
-
-<tr><td style="height:32px;font-size:0;background:#F5EEE3" height="32">&nbsp;</td></tr>
-
-<!-- SIGNOFF -->
-<tr><td class="pad-side" align="center" style="padding:0 44px 8px 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:600;color:#3a352f;line-height:1.6">Su jaukumu, Plush komanda.</div>
-</td></tr>
-
-<tr><td style="height:30px;font-size:0;background:#F5EEE3" height="30">&nbsp;</td></tr>
-
-</tbody></table>
-</td></tr></tbody></table>
+  </tr>
+</table>
 </body>
 </html>
