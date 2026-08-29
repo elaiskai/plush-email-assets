@@ -1,125 +1,423 @@
-<!--
-CAMPAIGN C55 v2: "Jaukumas prasideda namuose" - POLAROID INSPIRACIJOS ALBUMAS
-=================================================================================
-Perdaryta 08-29. Naujas layout: Polaroid nuotrauku albumas - 4 balti Polaroid remeliai
-2x2 grid su ranka rasytais parasais (Caveat font). NE isgalvoti "100+ seimu" testimonial
-(sazininga: tai inspiracijos apzvalga, ne klientu atsiliepimai). Trust juosta = tik
-patikrinti faktai (patvarus audiniai / miego funkcija+patalynes deze / svelnus audiniai).
-Skiriasi nuo visu C50-C63 layoutu (scrapbook/albumo estetika, Polaroid remeliai).
--->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="lt" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="x-apple-disable-message-reformatting">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet" type="text/css">
-<style type="text/css">
-  @media (max-width:480px) {
-    .pad-side { padding-left:20px!important;padding-right:20px!important; }
-    .g-title { font-size:31px!important; }
-    .pcol { display:block!important;width:100%!important;padding:0 0 18px 0!important; }
-    .tcol { display:block!important;width:100%!important;padding:10px 0!important; }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+  <title>Jaukumas prasideda namuose</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Caveat:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!--[if mso]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+      <o:AllowPNG/>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+  <style>
+    html,
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      min-width: 100% !important;
+      background-color: #E7DECF;
+    }
+
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    table,
+    td {
+      border-collapse: collapse !important;
+      mso-table-lspace: 0 !important;
+      mso-table-rspace: 0 !important;
+    }
+
+    img {
+      display: block;
+      border: 0;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .mobile-column {
+      display: inline-block;
+      width: 100%;
+      max-width: 270px;
+      vertical-align: top;
+    }
+
+    .trust-column {
+      display: inline-block;
+      width: 100%;
+      max-width: 176px;
+      vertical-align: top;
+    }
+
+    .polaroid {
+      box-shadow: 0 8px 20px rgba(58, 53, 47, 0.10);
+    }
+
+    .rotate-left {
+      transform: rotate(-1deg);
+    }
+
+    .rotate-right {
+      transform: rotate(1deg);
+    }
+
+    .button {
+      transition: background-color 0.2s ease;
+    }
+
+    .button:hover {
+      background-color: #e89500 !important;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .outer-pad {
+        padding: 0 !important;
+      }
+
+      .container {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .header-pad {
+        padding: 25px 24px 21px !important;
+      }
+
+      .hero-pad {
+        padding: 40px 24px 30px !important;
+      }
+
+      .album-pad {
+        padding: 4px 20px 38px !important;
+      }
+
+      .mobile-column {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .column-cell {
+        padding: 0 0 24px !important;
+      }
+
+      .column-cell-last {
+        padding-bottom: 0 !important;
+      }
+
+      .polaroid {
+        width: 100% !important;
+      }
+
+      .rotate-left,
+      .rotate-right {
+        transform: none !important;
+      }
+
+      .headline {
+        font-size: 32px !important;
+        line-height: 35px !important;
+        letter-spacing: -0.8px !important;
+      }
+
+      .body-copy {
+        font-size: 16px !important;
+        line-height: 25px !important;
+      }
+
+      .caption {
+        font-size: 25px !important;
+        line-height: 30px !important;
+      }
+
+      .trust-pad {
+        padding: 30px 24px 12px !important;
+      }
+
+      .trust-column {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .trust-item {
+        padding: 0 0 20px !important;
+      }
+
+      .trust-border {
+        border-right: 0 !important;
+        border-bottom: 1px solid #ded3c4 !important;
+        padding-bottom: 20px !important;
+      }
+
+      .closing-pad {
+        padding: 35px 24px 42px !important;
+      }
+
+      .closing-title {
+        font-size: 27px !important;
+        line-height: 33px !important;
+      }
+
+      .button-wrap,
+      .button-wrap table,
+      .button-wrap tbody,
+      .button-wrap tr,
+      .button-wrap td {
+        width: 100% !important;
+      }
+
+      .button {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 16px 18px !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+      }
+    }
+  </style>
 </head>
-<body style="width:100%;-webkit-text-size-adjust:100%;background-color:#E7DECF;margin:0;padding:0">
-<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#E7DECF">Įsivaizduokite, kuris iš šių kampų jaukiai įsilietų į jūsų namus.</div>
-<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#E7DECF"><tbody><tr><td>
-<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto;background-color:#F5EEE3"><tbody>
+<body>
+  <div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;">
+    Keturi populiarūs Plush kampai, kuriantys savitą jaukumo nuotaiką.
+  </div>
 
-<!-- LOGO -->
-<tr><td align="center" style="padding:26px 0 20px 0;background:#F5EEE3"><a href="https://plush.lt" target="_blank" rel="noopener" style="display:inline-block"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/logo/plush-wordmark.png" width="122" alt="PLUSH" style="display:block;width:122px;max-width:122px;height:auto;border:0"></a></td></tr>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#E7DECF">
+    <tr>
+      <td class="outer-pad" align="center" style="padding:24px 12px;">
+        <!--[if mso]>
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td>
+        <![endif]-->
+        <table role="presentation" class="container" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F5EEE3" style="max-width:600px;background-color:#F5EEE3;">
+          <tr>
+            <td class="header-pad" align="center" style="padding:27px 40px 23px;border-bottom:1px solid #e4dacb;">
+              <a href="https://plush.lt/" target="_blank" aria-label="Plush">
+                <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/logo/plush-wordmark.png" width="122" alt="Plush" style="width:122px;max-width:122px;height:auto;">
+              </a>
+            </td>
+          </tr>
 
-<!-- MASTHEAD -->
-<tr><td class="pad-side" align="center" style="padding:4px 44px 0 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:#FFA400;margin-bottom:13px">Namų albumas</div>
-  <div class="g-title" style="font-family:'Bricolage Grotesque','Arial Black',Arial,sans-serif;font-size:35px;font-weight:800;color:#1c1a17;letter-spacing:-0.02em;line-height:1.08;margin-bottom:13px">Jaukumas prasideda namuose</div>
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.65">Keturi populiarūs Plush kampai, kuriantys savitą jaukumo nuotaiką. Įsivaizduokite, kaip jie atrodytų jūsų namuose.</div>
-</td></tr>
+          <tr>
+            <td class="hero-pad" align="center" style="padding:48px 48px 34px;">
+              <p style="margin:0 0 13px;font-family:'Inter',Arial,sans-serif;font-size:12px;line-height:18px;font-weight:600;letter-spacing:2.4px;text-transform:uppercase;color:#FFA400;">
+                Namų albumas
+              </p>
+              <h1 class="headline" style="margin:0 0 18px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:42px;line-height:45px;font-weight:700;letter-spacing:-1.2px;color:#1c1a17;">
+                Jaukumas prasideda namuose
+              </h1>
+              <p class="body-copy" style="margin:0;max-width:465px;font-family:'Inter',Arial,sans-serif;font-size:16px;line-height:25px;font-weight:400;color:#6a635a;">
+                Keturi populiarūs Plush kampai, kuriantys savitą jaukumo nuotaiką. Įsivaizduokite, kaip jie atrodytų jūsų namuose.
+              </p>
+            </td>
+          </tr>
 
-<tr><td style="height:30px;font-size:0;background:#F5EEE3" height="30">&nbsp;</td></tr>
+          <tr>
+            <td class="album-pad" align="center" style="padding:6px 24px 45px;font-size:0;">
+              <!--[if mso]>
+              <table role="presentation" width="552" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td width="276" valign="top">
+              <![endif]-->
+              <div class="mobile-column">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="column-cell" style="padding:0 9px 25px;">
+                      <table role="presentation" class="polaroid rotate-left" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="background-color:#ffffff;border-radius:5px;">
+                        <tr>
+                          <td style="padding:10px 10px 0;">
+                            <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C55/assets/pa-sofi.jpg" width="238" alt="Sofi kampas" style="width:100%;max-width:100%;height:auto;border-radius:3px;">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="caption" align="center" style="padding:13px 12px 18px;font-family:'Caveat','Segoe Print',cursive;font-size:23px;line-height:28px;font-weight:600;color:#3a352f;">
+                            Sofi švelniam jaukumui
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="column-cell" style="padding:0 9px;">
+                      <table role="presentation" class="polaroid rotate-right" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="background-color:#ffffff;border-radius:5px;">
+                        <tr>
+                          <td style="padding:10px 10px 0;">
+                            <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C55/assets/pa-bueno.jpg" width="238" alt="Bueno kampas" style="width:100%;max-width:100%;height:auto;border-radius:3px;">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="caption" align="center" style="padding:13px 12px 18px;font-family:'Caveat','Segoe Print',cursive;font-size:23px;line-height:28px;font-weight:600;color:#3a352f;">
+                            Bueno erdvei ir ramybei
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso]>
+                  </td>
+                  <td width="276" valign="top">
+              <![endif]-->
+              <div class="mobile-column">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="column-cell" style="padding:0 9px 25px;">
+                      <table role="presentation" class="polaroid rotate-right" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="background-color:#ffffff;border-radius:5px;">
+                        <tr>
+                          <td style="padding:10px 10px 0;">
+                            <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C55/assets/pa-diego.jpg" width="238" alt="Diego kampas" style="width:100%;max-width:100%;height:auto;border-radius:3px;">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="caption" align="center" style="padding:13px 12px 18px;font-family:'Caveat','Segoe Print',cursive;font-size:23px;line-height:28px;font-weight:600;color:#3a352f;">
+                            Diego patogiam poilsiui
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="column-cell column-cell-last" style="padding:0 9px;">
+                      <table role="presentation" class="polaroid rotate-left" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="background-color:#ffffff;border-radius:5px;">
+                        <tr>
+                          <td style="padding:10px 10px 0;">
+                            <img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C55/assets/pa-luna.jpg" width="238" alt="Luna kampas" style="width:100%;max-width:100%;height:auto;border-radius:3px;">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="caption" align="center" style="padding:13px 12px 18px;font-family:'Caveat','Segoe Print',cursive;font-size:23px;line-height:28px;font-weight:600;color:#3a352f;">
+                            Luna švelnių linijų jaukumui
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso]>
+                  </td>
+                </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
 
-<!-- POLAROID ROW 1 -->
-<tr><td class="pad-side" style="padding:0 30px;background:#F5EEE3">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-    <td class="pcol" width="50%" valign="top" style="padding:0 9px 22px 0">
-      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:4px;box-shadow:0 2px 8px rgba(28,26,23,0.10)"><tbody>
-        <tr><td style="padding:9px 9px 0 9px"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C55/assets/pa-sofi.jpg" width="248" alt="Kampas Sofi" style="display:block;width:100%;height:auto;max-width:248px;border:0;border-radius:2px"></td></tr>
-        <tr><td align="center" style="padding:9px 8px 16px 8px;font-family:'Caveat',cursive;font-size:22px;font-weight:600;color:#3a352f;line-height:1.1">Sofi švelniam jaukumui</td></tr>
-      </tbody></table>
-    </td>
-    <td class="pcol" width="50%" valign="top" style="padding:0 0 22px 9px">
-      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:4px;box-shadow:0 2px 8px rgba(28,26,23,0.10)"><tbody>
-        <tr><td style="padding:9px 9px 0 9px"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C55/assets/pa-diego.jpg" width="248" alt="Kampas Diego" style="display:block;width:100%;height:auto;max-width:248px;border:0;border-radius:2px"></td></tr>
-        <tr><td align="center" style="padding:9px 8px 16px 8px;font-family:'Caveat',cursive;font-size:22px;font-weight:600;color:#3a352f;line-height:1.1">Diego patogiam poilsiui</td></tr>
-      </tbody></table>
-    </td>
-  </tr></tbody></table>
-</td></tr>
+          <tr>
+            <td class="trust-pad" align="center" bgcolor="#ffffff" style="padding:28px 24px 26px;background-color:#ffffff;font-size:0;">
+              <!--[if mso]>
+              <table role="presentation" width="528" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td width="176" valign="top">
+              <![endif]-->
+              <div class="trust-column">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="trust-item trust-border" align="center" style="padding:2px 13px;border-right:1px solid #ded3c4;">
+                      <div style="margin:0 0 7px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;line-height:20px;font-weight:700;color:#1c1a17;">Patvarūs audiniai</div>
+                      <div style="font-family:'Inter',Arial,sans-serif;font-size:13px;line-height:19px;font-weight:400;color:#6a635a;">Atsparūs dėvėjimuisi</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso]>
+                  </td>
+                  <td width="176" valign="top">
+              <![endif]-->
+              <div class="trust-column">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="trust-item trust-border" align="center" style="padding:2px 13px;border-right:1px solid #ded3c4;">
+                      <div style="margin:0 0 7px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;line-height:20px;font-weight:700;color:#1c1a17;">Miego funkcija</div>
+                      <div style="font-family:'Inter',Arial,sans-serif;font-size:13px;line-height:19px;font-weight:400;color:#6a635a;">Ir patalynės dėžė</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso]>
+                  </td>
+                  <td width="176" valign="top">
+              <![endif]-->
+              <div class="trust-column">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td class="trust-item" align="center" style="padding:2px 13px;">
+                      <div style="margin:0 0 7px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:16px;line-height:20px;font-weight:700;color:#1c1a17;">Švelnūs audiniai</div>
+                      <div style="font-family:'Inter',Arial,sans-serif;font-size:13px;line-height:19px;font-weight:400;color:#6a635a;">Jauku liesti</div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--[if mso]>
+                  </td>
+                </tr>
+              </table>
+              <![endif]-->
+            </td>
+          </tr>
 
-<!-- POLAROID ROW 2 -->
-<tr><td class="pad-side" style="padding:0 30px;background:#F5EEE3">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-    <td class="pcol" width="50%" valign="top" style="padding:0 9px 22px 0">
-      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:4px;box-shadow:0 2px 8px rgba(28,26,23,0.10)"><tbody>
-        <tr><td style="padding:9px 9px 0 9px"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C55/assets/pa-bueno.jpg" width="248" alt="Kampas Bueno" style="display:block;width:100%;height:auto;max-width:248px;border:0;border-radius:2px"></td></tr>
-        <tr><td align="center" style="padding:9px 8px 16px 8px;font-family:'Caveat',cursive;font-size:22px;font-weight:600;color:#3a352f;line-height:1.1">Bueno erdvei ir ramybei</td></tr>
-      </tbody></table>
-    </td>
-    <td class="pcol" width="50%" valign="top" style="padding:0 0 22px 9px">
-      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:4px;box-shadow:0 2px 8px rgba(28,26,23,0.10)"><tbody>
-        <tr><td style="padding:9px 9px 0 9px"><img src="https://cdn.jsdelivr.net/gh/elaiskai/plush-email-assets@main/previews/C55/assets/pa-luna.jpg" width="248" alt="Kampas Luna" style="display:block;width:100%;height:auto;max-width:248px;border:0;border-radius:2px"></td></tr>
-        <tr><td align="center" style="padding:9px 8px 16px 8px;font-family:'Caveat',cursive;font-size:22px;font-weight:600;color:#3a352f;line-height:1.1">Luna švelnių linijų jaukumui</td></tr>
-      </tbody></table>
-    </td>
-  </tr></tbody></table>
-</td></tr>
+          <tr>
+            <td class="closing-pad" align="center" style="padding:44px 48px 48px;">
+              <h2 class="closing-title" style="margin:0 0 25px;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:30px;line-height:37px;font-weight:700;letter-spacing:-0.5px;color:#1c1a17;">
+                Atraskite kampą, kuris jaukiai papildys jūsų namus.
+              </h2>
 
-<tr><td style="height:12px;font-size:0;background:#F5EEE3" height="12">&nbsp;</td></tr>
+              <div class="button-wrap" align="center">
+                <!--[if mso]>
+                <v:roundrect href="https://plush.lt/collections/kampai" style="height:52px;v-text-anchor:middle;width:270px;" arcsize="12%" stroke="f" fillcolor="#FFA400">
+                  <w:anchorlock xmlns:w="urn:schemas-microsoft-com:office:word"/>
+                  <center style="font-family:Arial,sans-serif;font-size:16px;font-weight:bold;color:#1c1a17;">
+                    Peržiūrėti kolekciją
+                  </center>
+                </v:roundrect>
+                <![endif]-->
+                <!--[if !mso]><!-->
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+                  <tr>
+                    <td align="center" bgcolor="#FFA400" style="border-radius:6px;background-color:#FFA400;">
+                      <a class="button" href="https://plush.lt/collections/kampai" target="_blank" style="display:inline-block;padding:16px 34px;font-family:'Inter',Arial,sans-serif;font-size:16px;line-height:20px;font-weight:700;color:#1c1a17;border-radius:6px;background-color:#FFA400;">
+                        Peržiūrėti kolekciją
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+                <!--<![endif]-->
+              </div>
 
-<!-- TRUST STRIP -->
-<tr><td class="pad-side" style="padding:0 30px;background:#F5EEE3">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="background:#efe6d6;border-radius:14px"><tbody><tr>
-    <td style="padding:20px 18px">
-      <table width="100%" border="0" cellpadding="0" cellspacing="0"><tbody><tr>
-        <td class="tcol" width="33%" valign="top" align="center" style="padding:0 10px">
-          <div style="font-family:'Inter',Arial,sans-serif;font-size:13px;font-weight:700;color:#1c1a17;line-height:1.4">Patvarūs audiniai</div>
-          <div style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:400;color:#6a635a;line-height:1.45;margin-top:4px">Atsparūs dėvėjimuisi</div>
-        </td>
-        <td class="tcol" width="34%" valign="top" align="center" style="padding:0 10px;border-left:1px solid #ddd1bd;border-right:1px solid #ddd1bd">
-          <div style="font-family:'Inter',Arial,sans-serif;font-size:13px;font-weight:700;color:#1c1a17;line-height:1.4">Miego funkcija</div>
-          <div style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:400;color:#6a635a;line-height:1.45;margin-top:4px">Ir patalynės dėžė</div>
-        </td>
-        <td class="tcol" width="33%" valign="top" align="center" style="padding:0 10px">
-          <div style="font-family:'Inter',Arial,sans-serif;font-size:13px;font-weight:700;color:#1c1a17;line-height:1.4">Švelnūs audiniai</div>
-          <div style="font-family:'Inter',Arial,sans-serif;font-size:12px;font-weight:400;color:#6a635a;line-height:1.45;margin-top:4px">Jaukūs liesti</div>
-        </td>
-      </tr></tbody></table>
-    </td>
-  </tr></tbody></table>
-</td></tr>
-
-<tr><td style="height:30px;font-size:0;background:#F5EEE3" height="30">&nbsp;</td></tr>
-
-<!-- CLOSING CTA -->
-<tr><td class="pad-side" align="center" style="padding:0 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:15px;font-weight:400;color:#6a635a;line-height:1.66;margin-bottom:24px">Atraskite kampą, kuris jaukiai papildys jūsų namus.</div>
-  <table border="0" cellpadding="0" cellspacing="0" align="center"><tbody><tr>
-    <td bgcolor="#1c1a17" style="border-radius:40px"><a href="https://plush.lt/collections/kampai" target="_blank" rel="noopener" style="display:inline-block;font-family:'Bricolage Grotesque',Arial,sans-serif;font-size:15px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;color:#ffffff;text-decoration:none;padding:15px 44px">Peržiūrėti kolekciją</a></td>
-  </tr></tbody></table>
-</td></tr>
-
-<tr><td style="height:34px;font-size:0;background:#F5EEE3" height="34">&nbsp;</td></tr>
-
-<!-- SIGNOFF -->
-<tr><td class="pad-side" align="center" style="padding:0 44px 8px 44px;background:#F5EEE3">
-  <div style="font-family:'Inter',Arial,sans-serif;font-size:14px;font-weight:600;color:#3a352f;line-height:1.6">Jaukiai, Plush komanda.</div>
-</td></tr>
-
-<tr><td style="height:30px;font-size:0;background:#F5EEE3" height="30">&nbsp;</td></tr>
-
-</tbody></table>
-</td></tr></tbody></table>
+              <p style="margin:29px 0 0;font-family:'Caveat','Segoe Print',cursive;font-size:23px;line-height:29px;font-weight:600;color:#3a352f;">
+                Jaukiai, Plush komanda.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <!--[if mso]>
+            </td>
+          </tr>
+        </table>
+        <![endif]-->
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
